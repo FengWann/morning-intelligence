@@ -156,7 +156,13 @@ physical phone or live credentials.
 
 ## Personal WeChat delivery
 
-Preview the five Chinese ServerChan messages without credentials or network access:
+The dated brief JSON now carries validated `intelligence_themes` and, when the
+evidence is sufficient, one `opportunity_hypothesis`. The web page renders the
+complete evidence chain. WeChat sends up to four substantive themes plus one
+change-and-opportunity summary; weak themes are omitted instead of filling a
+fixed quota.
+
+Preview the Chinese ServerChan messages without credentials or network access:
 
 ```powershell
 python -m news_intelligence send-wechat --brief public/briefs/2026-09-12.json
@@ -167,3 +173,6 @@ and add `--live-send`. The key is never written to files or output. Successful
 message progress is stored in `data/wechat-state.json`, so rerunning the same
 reporting date sends nothing twice and an interrupted run resumes at the next
 message.
+
+The synthesis rules, public schema, longitudinal states, and evidence gates are
+defined in [`docs/tasks/12-intelligence-synthesis.md`](docs/tasks/12-intelligence-synthesis.md).

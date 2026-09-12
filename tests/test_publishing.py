@@ -14,8 +14,16 @@ from news_intelligence.briefing import BriefInput, GeneratedBrief, build_input
 from news_intelligence.publishing import (
     build_publication,
     publish,
+    render_intelligence_markdown,
     scan_public_files,
     validate_public_tree,
+)
+from news_intelligence.synthesis import (
+    ImpactLink,
+    IntelligenceTheme,
+    OpportunityHypothesis,
+    ProblemSignal,
+    ThemeEvidence,
 )
 from tests.test_briefing import article, ranked
 
@@ -32,6 +40,59 @@ def fixture_publication(tmp_path: Path) -> tuple[BriefInput, GeneratedBrief]:
         "# 简报\n\n[REUTERS](https://reuters.test/1)\n", "今日简报", 600, ()
     )
     return data, brief
+
+
+def theme(reporting_date: str = "2026-09-12") -> IntelligenceTheme:
+    return IntelligenceTheme(
+        "theme_1234567890abcdef",
+        reporting_date,
+        "监管变化开始影响企业采购",
+        "新规正在把合规成本前移到采购环节。",
+        ("business", "asia"),
+        ("event-1",),
+        (ThemeEvidence("event-1", "REUTERS", "https://reuters.test/1"),),
+        "new",
+        "企业首次公开调整采购流程。",
+        (
+            ImpactLink(
+                "新规实施",
+                "审核前移",
+                ("企业采购团队",),
+                "采购周期可能延长",
+                "medium",
+                ("event-1",),
+            ),
+        ),
+        (
+            ProblemSignal(
+                "采购团队需要重复核验材料",
+                ("企业采购团队",),
+                "operational",
+                ("event-1",),
+            ),
+        ),
+        ("执行细则仍可能调整",),
+        ("尚无长期数据",),
+        "medium",
+        80,
+        "变化和证据较强，但长期影响仍不确定。",
+    )
+
+
+def opportunity() -> OpportunityHypothesis:
+    return OpportunityHypothesis(
+        "采购团队需要重复核验材料",
+        ("企业采购团队",),
+        "目前由人工逐项核验材料。",
+        "人工流程速度慢且容易遗漏。",
+        "AI 可辅助提取材料并标记缺口。",
+        "可测试一个采购材料核验助手。",
+        ("企业合规负责人",),
+        ("event-1",),
+        ("企业愿意试用辅助工具",),
+        "访谈五名采购负责人并测试样例。",
+        "low",
+    )
 
 
 def test_build_publish_and_serve_complete_site(tmp_path: Path) -> None:
@@ -142,3 +203,91 @@ def test_full_article_body_is_blocked() -> None:
     body = "Publisher-owned sentence " * 20
     with pytest.raises(ValueError, match="full article body"):
         scan_public_files({"briefs/2026-09-12.md": body}, private_article_bodies=[body])
+
+
+def test_structured_analysis_is_validated_rendered_and_published(
+    tmp_path: Path,
+) -> None:
+    data, brief = fixture_publication(tmp_path)
+    publication = build_publication(
+        data,
+        brief,
+        status="complete",
+        generated_at=datetime(2026, 9, 12, tzinfo=UTC),
+        base_url="https://example.test",
+        intelligence_themes=(theme(),),
+        opportunity_hypothesis=opportunity(),
+    )
+    markdown = render_intelligence_markdown(publication)
+    assert "核心判断" in markdown and "不确定性与反证" in markdown
+    assert "采购材料核验助手" in markdown
+    publish(tmp_path / "public", publication, "legacy")
+    payload = json.loads(
+        (tmp_path / "public/briefs/2026-09-12.json").read_text(encoding="utf-8")
+    )
+    assert payload["intelligence_themes"][0]["event_ids"] == ["event-1"]
+    assert "intelligence_themes" not in json.loads(
+        (tmp_path / "public/latest.json").read_text(encoding="utf-8")
+    )
+    assert "legacy" not in (tmp_path / "public/briefs/2026-09-12.md").read_text(
+        encoding="utf-8"
+    )
+
+
+@pytest.mark.parametrize(
+    "bad_theme",
+    [
+        replace(theme(), reporting_date="2026-09-11"),
+        replace(theme(), event_ids=("unknown",)),
+        replace(
+            theme(),
+            evidence=(ThemeEvidence("event-1", "R", "file:///private"),),
+        ),
+    ],
+)
+def test_structured_publication_rejects_invalid_themes(
+    tmp_path: Path, bad_theme: IntelligenceTheme
+) -> None:
+    data, brief = fixture_publication(tmp_path)
+    with pytest.raises(ValueError):
+        build_publication(
+            data,
+            brief,
+            status="complete",
+            generated_at=datetime(2026, 9, 12, tzinfo=UTC),
+            base_url="https://example.test",
+            intelligence_themes=(bad_theme,),
+        )
+
+
+def test_rejects_ungrounded_opportunity_and_nested_private_fields(
+    tmp_path: Path,
+) -> None:
+    data, brief = fixture_publication(tmp_path)
+    with pytest.raises(ValueError, match="grounded"):
+        build_publication(
+            data,
+            brief,
+            status="complete",
+            generated_at=datetime(2026, 9, 12, tzinfo=UTC),
+            base_url="https://example.test",
+            intelligence_themes=(theme(),),
+            opportunity_hypothesis=replace(opportunity(), problem_zh="另一个问题"),
+        )
+    with pytest.raises(ValueError, match="unsafe public content"):
+        scan_public_files({"briefs/2026-09-12.json": '{"theme":{"raw_text":"secret"}}'})
+
+
+def test_publish_revalidates_direct_publication_before_writing(tmp_path: Path) -> None:
+    data, brief = fixture_publication(tmp_path)
+    publication = build_publication(
+        data,
+        brief,
+        status="complete",
+        generated_at=datetime(2026, 9, 12, tzinfo=UTC),
+        base_url="https://example.test",
+    )
+    invalid = replace(publication, intelligence_themes=(theme("2026-09-11"),))
+    with pytest.raises(ValueError, match="reporting_date"):
+        publish(tmp_path / "public", invalid, brief.markdown)
+    assert not (tmp_path / "public").exists()

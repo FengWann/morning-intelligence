@@ -1,6 +1,6 @@
 # Personal AI Market Intelligence — Daily News MVP Specification
 
-Status: Draft v0.2 — implementation baseline  
+Status: Draft v0.3 — intelligence-synthesis baseline
 Date: 2026-09-12  
 Scope: Daily News MVP only
 
@@ -11,8 +11,11 @@ Build a personal morning intelligence brief that answers:
 1. What important events happened?
 2. Why do they matter?
 3. What changed compared with the recent news cycle?
+4. What problem appeared, and is there a bounded AI opportunity worth investigating?
 
-This release establishes the reliable news-to-brief pipeline needed by the future Opportunity Engine. It does not attempt to identify or validate commercial opportunities.
+This release extends the reliable news-to-brief pipeline with evidence-backed
+cross-event synthesis and one explicitly uncertain Opportunity Hypothesis. It
+does not perform full commercial validation.
 
 ## 2. Product principles
 
@@ -30,10 +33,10 @@ This release establishes the reliable news-to-brief pipeline needed by the futur
 |---|---|
 | Brief language | Primarily Chinese; retain English names and important technical terms |
 | Editorial allocation | Politics, Business, AI/Technology, and Singapore/Asia receive approximately equal attention |
-| Target duration | 10–15 minutes when read aloud |
-| Delivery time | Ready before 09:00 Asia/Singapore |
+| Text size | At most five concise WeChat messages; the complete evidence view remains on the web |
+| Delivery time | Web brief and personal-WeChat summary ready before 09:00 Asia/Singapore |
 | Run calendar | Every calendar day, including weekends and Singapore public holidays |
-| Audio | No generated MP3; iPhone Shortcut reads the published text using system speech |
+| Primary delivery | Up to five Chinese ServerChan messages to personal WeChat, plus the complete web brief |
 | Operating cost | No spending beyond the user's existing ChatGPT Plus subscription |
 | Analysis runtime | A scheduled Codex task on the user's computer |
 | Host availability | The user's computer will be powered on and online from 08:00–09:00 Asia/Singapore |
@@ -41,9 +44,9 @@ This release establishes the reliable news-to-brief pipeline needed by the futur
 | Private data | Raw collection data, preferences, processing logs, and future opportunity data remain private |
 | Repository | Code and sanitized public briefs share one public GitHub repository; private runtime data is excluded |
 | Editorial stance | Fact-first and politically non-aligned; disputed claims are attributed and credible differing accounts are represented |
-| External-service acceptance | GitHub Pages, Codex scheduling, iPhone Shortcut, and seven-day passage are verified with automated simulations; live activation is not required for automated completion |
+| External-service acceptance | GitHub Pages, Codex scheduling, ServerChan delivery, and seven-day passage are verified with automated simulations; live activation is not required for automated completion |
 | Event Registry | Not required in V1 |
-| Opportunity Engine | Out of scope |
+| Opportunity scope | One evidence-backed hypothesis is allowed; validation, pricing and lifecycle remain out of scope |
 
 ## 4. User experience
 
@@ -55,13 +58,13 @@ This release establishes the reliable news-to-brief pipeline needed by the futur
         Normalize and deduplicate articles
         Group articles into events
         Rank and select events
-        Produce Chinese intelligence brief
+        Synthesize cross-event themes and recent changes
+        Produce Chinese intelligence brief and opportunity hypothesis
         Validate citations and sanitize output
         Publish static files
 
-09:00  iPhone Shortcut fetches latest.json
-        Opens today's brief
-        Reads the speech text aloud
+Before 09:00  Publish the complete web brief
+              Send up to five Chinese intelligence messages through ServerChan
 ```
 
 The run should normally finish by 08:45, leaving 15 minutes for retries.
@@ -81,7 +84,9 @@ Things to Watch
 Sources
 ```
 
-Each category receives roughly equal editorial space. Equality is a target, not a hard quota: a category may be shorter when no sufficiently important event exists.
+The brief is organized around the most important cross-event changes. The four
+editorial lanes remain inputs to coverage and scoring, but they are not four
+independent headline lists.
 
 ### 4.3 Event presentation
 
@@ -95,7 +100,9 @@ Each selected event contains:
 - A confidence label
 - Links to supporting sources
 
-The spoken version omits raw URLs and citation mechanics but preserves source names and uncertainty.
+Legacy `speech_text` may remain for backward compatibility, but Module 12 has no
+spoken-duration requirement and must not use the audio-oriented structure as its
+source of truth.
 
 ## 5. Scope
 
@@ -112,18 +119,21 @@ The spoken version omits raw URLs and citation mechanics but preserves source na
 - Markdown and machine-readable static output
 - Daily archive
 - Public sanitized publishing
-- iPhone Shortcut-compatible delivery
+- Backward-compatible iPhone Shortcut data
 - Retry behavior and visible run status
+- Cross-event Intelligence Themes
+- 7/30/90-day longitudinal comparison
+- Evidence-linked impact chains and problem signals
+- One bounded Opportunity Hypothesis per day when evidence is sufficient
+- Up to five Chinese personal-WeChat messages through ServerChan
 
 ### 5.2 Out of scope
 
-- Opportunity detection or scoring
-- Problem Signal extraction
 - Opportunity lifecycle management
 - Market sizing, competitor research, or customer discovery
 - PostgreSQL or a remote database
 - Event Registry integration
-- Generated MP3 files
+- Generated MP3 files or required audio delivery
 - A custom mobile app
 - A complex web dashboard
 - User accounts or authentication
@@ -302,12 +312,14 @@ Every score must include a short rationale. Scores rank candidates; they are not
 - Prefer independently corroborated events.
 - Avoid selecting the same event in multiple sections.
 - Do not fill a section with weak events merely to satisfy equal allocation.
-- Keep the final spoken text within the 10–15 minute target.
+- Keep each ServerChan message within its 2,800-character cap and the daily output
+  at no more than five messages.
 - Preserve at least one Singapore/Asia lens when sufficiently important evidence exists.
 
 ### 8.7 Produce “What Changed?”
 
-V1 compares selected events and their entities/topics with the previous seven daily archives. It may report:
+Module 12 compares Intelligence Themes and their supporting Events over the
+previous 7, 30, and 90 valid daily archives. It may report:
 
 - A genuinely new development in an existing story
 - A material increase in coverage across independent sources
@@ -363,7 +375,7 @@ public/
   briefs/YYYY-MM-DD.json
 ```
 
-`latest.json` is the stable iPhone entry point:
+`latest.json` remains a backward-compatible public entry point:
 
 ```json
 {
@@ -390,9 +402,9 @@ The public Git history must never include private `data/` files. Publication sho
 - If the run cannot produce a valid brief, keep the previous successful public brief and update status metadata; never publish an empty or fabricated brief.
 - Re-running the same reporting date must be idempotent.
 
-## 11. iPhone Shortcut contract
+## 11. Legacy iPhone Shortcut contract
 
-At 09:00 Asia/Singapore, the Shortcut:
+The optional Shortcut may still:
 
 1. Fetches `latest.json`.
 2. Confirms the date is today and status is `complete` or `partial`.
@@ -418,13 +430,14 @@ V1 is accepted when it can:
 
 - Complete seven consecutive scheduled daily runs without manual intervention
 - Publish before 09:00 on at least six of those seven days
-- Produce a 10–15 minute Chinese spoken brief
+- Produce a structured Chinese Intelligence Theme brief and at most five Chinese
+  ServerChan messages
 - Cover the four editorial categories without systematic source domination
 - Avoid repeating the same real-world event as separate headline items
 - Attach valid source evidence to every selected event
 - Retain private daily Article, Event and Run archives
 - Allow historical briefs to be opened by date
-- Let an iPhone fetch and read the current brief without credentials
+- Let the user open the complete current and historical web briefs from WeChat
 
 For unattended implementation, external integrations and passage of time are represented by deterministic simulations. The build must still produce activation-ready GitHub Pages, scheduler, and Shortcut instructions, but it does not require credentials, a physical iPhone, or seven elapsed days.
 
@@ -477,4 +490,7 @@ Add a component only when its trigger occurs:
 
 ## 15. Definition of done
 
-The Daily News MVP is done when a scheduled run reliably turns fresh public news into an evidence-backed, sanitized Chinese brief, publishes it before 09:00, and an iPhone can read it aloud without any additional paid service or manual daily action.
+The current system scope is done when a scheduled run reliably turns fresh public
+news and valid history into evidence-backed Chinese Intelligence Themes, publishes
+the full sanitized brief before 09:00, and sends no more than five idempotent
+personal-WeChat messages without any additional paid service or manual daily action.

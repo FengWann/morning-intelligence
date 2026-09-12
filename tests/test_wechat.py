@@ -2,7 +2,9 @@
 
 import json
 import urllib.parse
+from dataclasses import asdict, replace
 from pathlib import Path
+from typing import cast
 
 import pytest
 
@@ -13,6 +15,7 @@ from news_intelligence.wechat import (
     messages_from_publication,
     send_publication,
 )
+from tests.test_publishing import opportunity, theme
 
 
 def publication() -> dict[str, object]:
@@ -160,3 +163,77 @@ def test_cli_dry_run_never_sends(
     brief.write_text(json.dumps(publication()), encoding="utf-8")
     assert main(["send-wechat", "--brief", str(brief)]) == 0
     assert len(json.loads(capsys.readouterr().out)) == 5
+
+
+def structured_publication(count: int = 4) -> dict[str, object]:
+    themes = [
+        asdict(
+            replace(
+                theme(),
+                id=f"theme_{index:016x}",
+                title_zh=f"主题{index}发生重要变化",
+                score=90 - index,
+            )
+        )
+        for index in range(count)
+    ]
+    return cast(
+        dict[str, object],
+        json.loads(
+            json.dumps(
+                {
+                    "date": "2026-09-12",
+                    "events": [
+                        {"id": f"event-{index}"} for index in range(1, count + 1)
+                    ],
+                    "intelligence_themes": themes,
+                    "opportunity_hypothesis": asdict(opportunity()),
+                }
+            )
+        ),
+    )
+
+
+def test_structured_messages_use_real_themes_and_optional_summary() -> None:
+    messages = messages_from_publication(structured_publication())
+    assert len(messages) == 5
+    assert all(len(item.body) <= 2800 for item in messages)
+    assert "核心判断" in messages[0].body
+    assert "变化总结" in messages[-1].body
+    assert "产品假设" in messages[-1].body
+
+    sparse = structured_publication(1)
+    sparse.pop("opportunity_hypothesis")
+    assert len(messages_from_publication(sparse)) == 2
+    assert "证据不足" in messages_from_publication(sparse)[-1].body
+    empty = messages_from_publication(
+        {"date": "2026-09-12", "events": [], "intelligence_themes": []}
+    )
+    assert len(empty) == 1 and "证据不足" in empty[0].body
+
+
+def test_structured_key_never_uses_legacy_fallback() -> None:
+    payload = publication()
+    payload["intelligence_themes"] = "invalid"
+    with pytest.raises(ValueError, match="list"):
+        messages_from_publication(payload)
+    payload["events"] = []
+    payload["intelligence_themes"] = [{"raw_text": "private"}]
+    with pytest.raises(ValueError, match="invalid intelligence theme"):
+        messages_from_publication(payload)
+
+
+def test_structured_send_resumes_from_first_unsent(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("SERVERCHAN_SENDKEY", "secret-value")
+    state = tmp_path / "state.json"
+    state.write_text('{"date":"2026-09-12","sent":4}', encoding="utf-8")
+    calls: list[bytes] = []
+    assert (
+        send_publication(
+            structured_publication(), state, post=lambda _url, data: calls.append(data)
+        )
+        == 1
+    )
+    assert len(calls) == 1

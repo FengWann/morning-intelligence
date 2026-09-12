@@ -14,7 +14,10 @@ Before changing anything, read completely:
 
 Instruction priority is: system and user instructions, `SPEC.md`, this prompt, module task files, then README guidance.
 
-Do not expand the product into the deferred Opportunity Engine, PostgreSQL, Event Registry, generated MP3, custom mobile application, or complex dashboard.
+Do not expand the product into full opportunity validation, PostgreSQL, Event
+Registry, generated MP3, a custom mobile application, or a complex dashboard.
+Module 12 explicitly permits one evidence-backed Opportunity Hypothesis, but not
+market size, pricing, customer validation, or Opportunity lifecycle claims.
 
 ## Delegate every module
 
@@ -98,7 +101,10 @@ The user accepts only the existing ChatGPT Plus subscription and no separately b
 
 - Use a controlled clock to simulate seven consecutive calendar days.
 - Generate corresponding private run records and public output in a temporary test workspace.
-- Verify that at least six of seven simulated briefs are ready before 09:00, every selected event has evidence, briefs meet the spoken-length rule, and stale output is never presented as current.
+- Verify that at least six of seven simulated briefs are ready before 09:00, every
+  selected event has evidence, and stale output is never presented as current.
+  The legacy Module 11 fixture may retain its spoken-length assertion, but Module
+  12 has no spoken-duration acceptance requirement.
 - Do not wait for real days to pass.
 
 ## Data and editorial rules
@@ -112,6 +118,53 @@ The user accepts only the existing ChatGPT Plus subscription and no separately b
 - Prefer false splits over false event merges when evidence is ambiguous.
 - Never describe repeated coverage alone as a trend.
 - Keep public output sanitized and private archives excluded from version control.
+
+## Intelligence synthesis rules
+
+For Module 12, Article and Event records remain evidence inputs; an Intelligence
+Theme is the delivered unit. Read `docs/tasks/12-intelligence-synthesis.md`
+completely before implementation and follow its contracts.
+
+- Never deliver a list of rewritten article summaries as intelligence synthesis.
+- Connect Events only when a stated causal, operational, market, regulatory, or
+  technological mechanism is supported; shared keywords are not enough.
+- A synthesis normally needs at least two distinct Events. Label a single-Event
+  result as event analysis rather than implying a broader pattern.
+- Compare available private history over 7, 30, and 90 days. Repetition and
+  syndicated copies alone never establish continuation or acceleration.
+- Lead every theme with a Chinese conclusion, then show evidence, material change,
+  impact chain, affected actors, problem signals, counter-evidence, uncertainty,
+  confidence, and source links.
+- Every impact link, problem signal, and opportunity field must reference valid
+  Event IDs. Reject unknown IDs and unsupported claims before rendering.
+- Generate at most one Opportunity Hypothesis from an accepted problem signal.
+  It must state current solution, gap, bounded AI leverage, possible buyer, key
+  assumptions, confidence, and the next validation step.
+- Preserve counter-evidence and alternative explanations. Do not turn plausible
+  causality into confirmed fact.
+- All analysis, summaries, and delivery text are Simplified Chinese. Source names,
+  original titles, proper nouns, and necessary technical terms may remain in their
+  original language.
+- Render ServerChan messages from structured Intelligence Theme fields, never by
+  splitting free-form prose. Send at most five messages: the three strongest
+  material changes, a strong Singapore/Asia theme or next-best theme, and a final
+  change summary plus Opportunity Radar. Never add weak filler.
+- Retain the zero-additional-cost constraint: no separately billed API, OpenAI API
+  key, paid host, or paid ServerChan tier.
+
+## Module 12 completion additions
+
+Before checking Module 12 or changing the live automation prompt:
+
+- Achieve at least 90% line and branch coverage for synthesis, history comparison,
+  evidence validation, and structured WeChat rendering.
+- Exercise related and unrelated Events, syndicated copies, conflicting evidence,
+  insufficient history, false acceleration, partial sources, fewer than five
+  messages, no valid opportunity, invalid structured model output, and retry.
+- Inspect one deterministic seven-day result and confirm that conclusions precede
+  news evidence and that no unsupported trend or commercial claim appears.
+- Update the live 08:00 automation only after the full `pytest`, strict `mypy`,
+  `ruff check`, and `ruff format --check` gates pass.
 
 ## Progress discipline
 
@@ -141,4 +194,3 @@ The project is complete only when:
 - README documents clean-checkout setup, local smoke run, testing, simulated external integrations, and manual activation.
 
 In the final report, lead with the implemented outcome, list exact verification commands and results, disclose that external services were simulated rather than activated, and identify every remaining unchecked item. Never call the project complete while an item remains unchecked.
-

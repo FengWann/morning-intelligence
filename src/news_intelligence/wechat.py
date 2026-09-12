@@ -6,12 +6,20 @@ import json
 import os
 import re
 import tempfile
+import urllib as urllib
 import urllib.parse
 import urllib.request
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+
+from news_intelligence.synthesis import (
+    IntelligenceTheme,
+    parse_proposed_theme,
+    select_themes,
+    validate_theme,
+)
 
 SERVERCHAN_URL = "https://sctapi.ftqq.com/{sendkey}.send"
 _SECTIONS = (
@@ -58,10 +66,12 @@ def _compact(text: str, limit: int = 2800) -> str:
 
 
 def messages_from_publication(payload: Mapping[str, Any]) -> tuple[Message, ...]:
-    """Create the five fixed daily channels from a published brief payload."""
+    """Create structured theme messages, falling back only for legacy payloads."""
     date = payload.get("date")
     if not isinstance(date, str) or not date:
         raise ValueError("publication must contain a date")
+    if "intelligence_themes" in payload:
+        return _structured_messages(date, payload)
     speech = payload.get("speech_text")
     if not isinstance(speech, str):
         speech = ""
@@ -95,6 +105,97 @@ def messages_from_publication(payload: Mapping[str, Any]) -> tuple[Message, ...]
         Message(item.title, item.body or fallback or "今天没有相关内容。")
         for item in result
     )
+
+
+def _structured_messages(date: str, payload: Mapping[str, Any]) -> tuple[Message, ...]:
+    raw_themes = payload.get("intelligence_themes")
+    if not isinstance(raw_themes, list):
+        raise ValueError("intelligence_themes must be a list")
+    event_ids = _published_event_ids(payload.get("events"))
+    themes = tuple(_theme_mapping(item) for item in raw_themes)
+    for theme in themes:
+        validate_theme(theme, event_ids)
+        if theme.reporting_date != date:
+            raise ValueError("theme reporting_date must match publication date")
+    selected = select_themes(themes)
+    result = [
+        Message(f"{date} · {theme.title_zh}", _compact(_theme_body(theme)))
+        for theme in selected
+    ]
+    summary = _summary_body(selected, payload.get("opportunity_hypothesis"))
+    if summary:
+        result.append(Message(f"{date} · 变化与机会雷达", _compact(summary)))
+    return tuple(result[:5])
+
+
+def _published_event_ids(value: object) -> set[str]:
+    if not isinstance(value, list):
+        raise ValueError("structured publication must contain events")
+    result = {
+        item["id"]
+        for item in value
+        if isinstance(item, Mapping) and isinstance(item.get("id"), str)
+    }
+    if len(result) != len(value):
+        raise ValueError("publication events are invalid")
+    return result
+
+
+def _theme_mapping(value: object) -> IntelligenceTheme:
+    if not isinstance(value, Mapping):
+        raise ValueError("intelligence theme must be an object")
+    try:
+        return parse_proposed_theme(value)
+    except (KeyError, TypeError, ValueError) as exc:
+        raise ValueError("invalid intelligence theme") from exc
+
+
+def _theme_body(theme: IntelligenceTheme) -> str:
+    evidence = "\n".join(
+        f"- [{item.source_name}]({item.url})" for item in theme.evidence
+    )
+    impacts = "\n".join(
+        f"- {item.cause_zh} → {item.mechanism_zh} → {item.effect_zh}"
+        for item in theme.impact_chain
+    )
+    uncertainty = (
+        "；".join((*theme.counter_evidence_zh, *theme.uncertainties_zh))
+        or "暂无显著反证，仍需持续验证。"
+    )
+    return (
+        f"核心判断：{theme.thesis_zh}\n\n"
+        f"支撑事件与来源：\n{evidence}\n\n"
+        f"变化：{theme.change_summary_zh}\n\n"
+        f"影响链：\n{impacts}\n\n"
+        f"不确定性与反证：{uncertainty}"
+    )
+
+
+def _summary_body(themes: Sequence[IntelligenceTheme], opportunity: object) -> str:
+    parts: list[str] = []
+    if themes:
+        parts.append(
+            "变化总结：\n"
+            + "\n".join(
+                f"- {item.title_zh}：{item.change_summary_zh}" for item in themes
+            )
+        )
+    if isinstance(opportunity, Mapping):
+        problem = opportunity.get("problem_zh")
+        product = opportunity.get("potential_product_zh")
+        next_step = opportunity.get("next_validation_step_zh")
+        if all(
+            isinstance(item, str) and item.strip()
+            for item in (problem, product, next_step)
+        ):
+            parts.append(
+                f"机会雷达：{problem}\n产品假设：{product}\n下一步：{next_step}"
+            )
+    elif themes:
+        parts.append("机会雷达：当前问题证据不足，今天不提出机会假设。")
+    elif not parts:
+        parts.append("当前证据不足，今天不推送未经验证的情报主题。")
+    return "\n\n".join(parts)
 
 
 def _post(url: str, data: bytes) -> None:

@@ -13,7 +13,10 @@ The modules are ordered by dependency. Check a module only after every task in i
 - [x] [09 — Scheduling and Recovery](docs/tasks/09-scheduling-recovery.md)
 - [x] [10 — iPhone Shortcut Delivery](docs/tasks/10-iphone-shortcut.md)
 - [x] [11 — Seven-Day Acceptance](docs/tasks/11-seven-day-acceptance.md)
+- [x] [12 — Intelligence Synthesis](docs/tasks/12-intelligence-synthesis.md)
 
 ## Completion rule
 
-The Daily News MVP is complete only when all eleven modules above are checked. Opportunity detection begins only after Module 11 passes.
+The intelligence system is complete for the current scope only when all twelve
+modules above are checked. Module 12 may create evidence-backed Opportunity
+Hypotheses; full opportunity validation remains deferred.
