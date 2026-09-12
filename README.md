@@ -156,7 +156,7 @@ physical phone or live credentials.
 
 ## Personal WeChat delivery
 
-Preview the five ServerChan messages without credentials or network access:
+Preview the five Chinese ServerChan messages without credentials or network access:
 
 ```powershell
 python -m news_intelligence send-wechat --brief public/briefs/2026-09-12.json

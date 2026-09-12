@@ -15,12 +15,12 @@ from typing import Any
 
 SERVERCHAN_URL = "https://sctapi.ftqq.com/{sendkey}.send"
 _SECTIONS = (
-    ("Politics / Global", "Politics and global affairs."),
-    ("Business", "Business."),
-    ("AI / Technology", "AI and technology."),
-    ("Singapore / Asia", "Singapore and Asia."),
+    ("政治与全球", "政治与全球事务。"),
+    ("商业", "商业。"),
+    ("人工智能与科技", "人工智能与科技。"),
+    ("新加坡与亚洲", "新加坡与亚洲。"),
 )
-_FINAL_HEADINGS = ("What changed.", "Opportunity radar.")
+_FINAL_HEADINGS = ("发生了什么变化。", "机会雷达。")
 
 
 @dataclass(frozen=True)
@@ -66,9 +66,7 @@ def messages_from_publication(payload: Mapping[str, Any]) -> tuple[Message, ...]
     if not isinstance(speech, str):
         speech = ""
     headings = (
-        tuple(heading for _, heading in _SECTIONS)
-        + _FINAL_HEADINGS
-        + ("Things to watch.",)
+        tuple(heading for _, heading in _SECTIONS) + _FINAL_HEADINGS + ("值得关注。",)
     )
     result = [
         Message(f"{date} · {title}", _compact(_section(speech, heading, headings)))
@@ -79,9 +77,7 @@ def messages_from_publication(payload: Mapping[str, Any]) -> tuple[Message, ...]
         for heading in _FINAL_HEADINGS
         if _section(speech, heading, headings)
     )
-    result.append(
-        Message(f"{date} · What Changed + Opportunity Radar", _compact(final))
-    )
+    result.append(Message(f"{date} · 变化与机会雷达", _compact(final)))
 
     events = payload.get("events")
     fallback = (
@@ -96,7 +92,7 @@ def messages_from_publication(payload: Mapping[str, Any]) -> tuple[Message, ...]
         else ""
     )
     return tuple(
-        Message(item.title, item.body or fallback or "No items today.")
+        Message(item.title, item.body or fallback or "今天没有相关内容。")
         for item in result
     )
 

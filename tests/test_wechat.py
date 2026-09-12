@@ -17,18 +17,18 @@ from news_intelligence.wechat import (
 
 def publication() -> dict[str, object]:
     headings = (
-        "Politics and global affairs.",
-        "Business.",
-        "AI and technology.",
-        "Singapore and Asia.",
-        "What changed.",
-        "Opportunity radar.",
-        "Things to watch.",
+        "政治与全球事务。",
+        "商业。",
+        "人工智能与科技。",
+        "新加坡与亚洲。",
+        "发生了什么变化。",
+        "机会雷达。",
+        "值得关注。",
     )
     return {
         "date": "2026-09-12",
         "speech_text": "\n\n".join(
-            f"{heading}\nContent {index}." for index, heading in enumerate(headings)
+            f"{heading}\n内容 {index}。" for index, heading in enumerate(headings)
         ),
         "events": [{"title": "Fallback", "summary": "Event summary"}],
     }
@@ -38,14 +38,14 @@ def test_builds_five_named_messages() -> None:
     messages = messages_from_publication(publication())
     assert len(messages) == 5
     assert [message.title.split(" · ")[1] for message in messages] == [
-        "Politics / Global",
-        "Business",
-        "AI / Technology",
-        "Singapore / Asia",
-        "What Changed + Opportunity Radar",
+        "政治与全球",
+        "商业",
+        "人工智能与科技",
+        "新加坡与亚洲",
+        "变化与机会雷达",
     ]
-    assert "What changed." in messages[-1].body
-    assert "Opportunity radar." in messages[-1].body
+    assert "发生了什么变化。" in messages[-1].body
+    assert "机会雷达。" in messages[-1].body
 
 
 def test_event_fallback_and_validation() -> None:
