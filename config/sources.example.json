@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"id": "bbc-world", "name": "BBC World", "kind": "rss", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "lane": "politics", "language": "en"},
+    {"id": "cnbc-business", "name": "CNBC Business", "kind": "rss", "url": "https://www.cnbc.com/id/10001147/device/rss/rss.html", "lane": "business", "language": "en"},
+    {"id": "mit-tech-review", "name": "MIT Technology Review", "kind": "rss", "url": "https://www.technologyreview.com/feed/", "lane": "ai_technology", "language": "en"},
+    {"id": "cna-singapore", "name": "CNA Singapore", "kind": "rss", "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=10416", "lane": "singapore_asia", "language": "en"},
+    {"id": "gdelt", "name": "GDELT", "kind": "gdelt", "url": "https://api.gdeltproject.org/api/v2/doc/doc", "lane": "global", "language": null, "query": "(politics OR business OR technology OR Singapore)"}
+  ]
+}
