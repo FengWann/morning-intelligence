@@ -153,3 +153,17 @@ a personal automation and is not shared through the repository.
 The automated equivalent of these branches is `tests/test_shortcut.py`; it
 covers complete, partial, stale, offline, and malformed responses without a
 physical phone or live credentials.
+
+## Personal WeChat delivery
+
+Preview the five ServerChan messages without credentials or network access:
+
+```powershell
+python -m news_intelligence send-wechat --brief public/briefs/2026-09-12.json
+```
+
+For an intentional live send, set `SERVERCHAN_SENDKEY` in the local environment
+and add `--live-send`. The key is never written to files or output. Successful
+message progress is stored in `data/wechat-state.json`, so rerunning the same
+reporting date sends nothing twice and an interrupted run resumes at the next
+message.

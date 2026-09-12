@@ -9,6 +9,7 @@ from pathlib import Path
 from news_intelligence.archive import reporting_date
 from news_intelligence.ingestion import collect, load_sources, result_json
 from news_intelligence.scheduling import AttemptResult, run_daily
+from news_intelligence.wechat import messages_from_publication, send_publication
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -32,6 +33,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="run only today's Singapore report after downtime",
     )
     run_parser.add_argument("--workspace", type=Path, default=Path.cwd())
+    send_parser = subparsers.add_parser("send-wechat", help="send a published brief")
+    send_parser.add_argument("--brief", type=Path, required=True)
+    send_parser.add_argument(
+        "--state", type=Path, default=Path("data/wechat-state.json")
+    )
+    send_parser.add_argument(
+        "--live-send", action="store_true", help="confirm intentional message sending"
+    )
     return parser
 
 
@@ -80,4 +89,21 @@ def main(argv: Sequence[str] | None = None) -> int:
         if not args.catch_up:
             build_parser().error("run requires --catch-up")
         return run_command(args.workspace, datetime.now(UTC))
+    elif args.command == "send-wechat":
+        payload = json.loads(args.brief.read_text(encoding="utf-8"))
+        if not isinstance(payload, dict):
+            build_parser().error("brief must be a JSON object")
+        if args.live_send:
+            print(json.dumps({"sent": send_publication(payload, args.state)}))
+        else:
+            print(
+                json.dumps(
+                    [
+                        message.__dict__
+                        for message in messages_from_publication(payload)
+                    ],
+                    ensure_ascii=False,
+                    indent=2,
+                )
+            )
     return 0
