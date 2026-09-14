@@ -1,0 +1,114 @@
+{
+  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-09-14.md",
+  "date": "2026-09-14",
+  "events": [
+    {
+      "confidence": "medium",
+      "id": "us-ai-competition-response",
+      "sources": [{"name": "AP", "url": "https://apnews.com/article/9df0ebb4c1b0619aa0f88057b5a1092d"}],
+      "summary": "President Trump argued against tighter checks on AI development, framing the issue as competition with China.",
+      "title": "US president resists stronger checks on AI development"
+    },
+    {
+      "confidence": "medium",
+      "id": "us-ai-legislative-response",
+      "sources": [{"name": "Axios", "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson"}],
+      "summary": "House Speaker Mike Johnson said Congress would seek AI solutions but would not take the lead in determining them.",
+      "title": "Congressional leader declines a leading role on AI safeguards"
+    },
+    {
+      "confidence": "medium",
+      "id": "yemen-red-sea-escalation",
+      "sources": [{"name": "AP", "url": "https://apnews.com/article/90dc86201ef51410ebcdd913837d741d"}],
+      "summary": "Fighting intensified in Yemen alongside attacks on Saudi Arabia; the UN estimated more than 80,000 people displaced since the start of September.",
+      "title": "Yemen fighting and Red Sea security risks intensify"
+    },
+    {
+      "confidence": "low-medium",
+      "id": "hormuz-ship-attack-report",
+      "sources": [{"name": "Reuters via The State", "url": "https://www.thestate.com/news/nation-world/world/"}],
+      "summary": "Maritime trackers received a new report of an attack on a ship in the Strait of Hormuz; details remain limited.",
+      "title": "New ship attack reported in Strait of Hormuz"
+    }
+  ],
+  "generated_at": "2026-09-14T08:00:35+08:00",
+  "intelligence_themes": [
+    {
+      "change_state": "turning",
+      "change_summary_zh": "昨日行业内部提出减速与外部评估，今天美国政治领导人公开抵制更强限制，把安全与对华竞争直接对置。",
+      "confidence": "medium",
+      "counter_evidence_zh": ["公开表态不等于最终政策，行政措施和州级规则仍可能加强。"],
+      "event_ids": ["us-ai-competition-response", "us-ai-legislative-response"],
+      "evidence": [
+        {"event_id": "us-ai-competition-response", "source_name": "AP", "url": "https://apnews.com/article/9df0ebb4c1b0619aa0f88057b5a1092d"},
+        {"event_id": "us-ai-legislative-response", "source_name": "Axios", "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson"}
+      ],
+      "id": "theme_9f2d4c7a6b1e8035",
+      "impact_chain": [
+        {
+          "affected_actors_zh": ["前沿模型公司", "跨州运营的 AI 产品公司", "受监管企业"],
+          "cause_zh": "行业提出减速与加强安全措施",
+          "confidence": "medium",
+          "effect_zh": "全国性约束短期更难形成，企业需面对更分散的治理要求",
+          "evidence_event_ids": ["us-ai-competition-response", "us-ai-legislative-response"],
+          "mechanism_zh": "政治领导人将限制与对华技术竞争对置，并拒绝由国会主导具体方案"
+        }
+      ],
+      "lanes": ["AI/Technology", "Politics", "Business"],
+      "problem_signals": [
+        {
+          "evidence_event_ids": ["us-ai-competition-response", "us-ai-legislative-response"],
+          "problem_zh": "企业需要持续把分散监管来源和自愿标准映射到内部 AI 控制",
+          "type": "regulatory",
+          "who_has_it_zh": ["跨地区部署 AI 的企业合规团队", "AI 治理团队"]
+        }
+      ],
+      "reporting_date": "2026-09-14",
+      "score": 86,
+      "score_rationale_zh": "新政治回应直接改变昨日安全倡议的政策环境；证据来自两个独立事件，但实际规则与执行仍未知。",
+      "thesis_zh": "前沿 AI 公司提出放慢能力推进后，美国总统公开反对加强限制，国会领导层也表示不会主导立法；安全担忧正进入国家竞争与监管权限的正面冲突。",
+      "title_zh": "AI 安全共识尚未形成，减速倡议迅速遇到政策阻力",
+      "uncertainties_zh": ["美国以外司法辖区的回应可能不同。", "尚无具体法案或行政规则结果。"]
+    },
+    {
+      "change_state": "insufficient_history",
+      "change_summary_zh": "也门战事、对沙特攻击与霍尔木兹船舶遇袭报告把风险从单一设施扩展到两个关键海上通道；结构化历史不足，暂不判断加速。",
+      "confidence": "medium",
+      "counter_evidence_zh": ["风险溢价未必转化为持续供应短缺，替代航线和库存可能缓冲影响。"],
+      "event_ids": ["yemen-red-sea-escalation", "hormuz-ship-attack-report"],
+      "evidence": [
+        {"event_id": "yemen-red-sea-escalation", "source_name": "AP", "url": "https://apnews.com/article/90dc86201ef51410ebcdd913837d741d"},
+        {"event_id": "hormuz-ship-attack-report", "source_name": "Reuters via The State", "url": "https://www.thestate.com/news/nation-world/world/"}
+      ],
+      "id": "theme_7a31e9c4d8b260f5",
+      "impact_chain": [
+        {
+          "affected_actors_zh": ["船公司和船员", "亚洲能源进口商", "新加坡航运与保险企业"],
+          "cause_zh": "红海沿岸战事与霍尔木兹船舶遇袭报告同时出现",
+          "confidence": "medium",
+          "effect_zh": "亚洲企业可能面对绕航、保险、能源价格和交付时间波动",
+          "evidence_event_ids": ["yemen-red-sea-escalation", "hormuz-ship-attack-report"],
+          "mechanism_zh": "安全风险同时触及红海与海湾能源运输，使市场在实际供应减少前计入风险溢价"
+        }
+      ],
+      "lanes": ["Politics", "Business", "Singapore/Asia"],
+      "problem_signals": [
+        {
+          "evidence_event_ids": ["yemen-red-sea-escalation", "hormuz-ship-attack-report"],
+          "problem_zh": "企业难以及时把分散安全事件转换为航线、库存和供应商暴露判断",
+          "type": "operational",
+          "who_has_it_zh": ["亚洲进口商", "供应链团队", "航运保险团队"]
+        }
+      ],
+      "reporting_date": "2026-09-14",
+      "score": 78,
+      "score_rationale_zh": "两个不同航区事件具有明确供应链关联，但关键海事细节和实际商业影响仍待验证。",
+      "thesis_zh": "也门战事升级、对沙特攻击与霍尔木兹船舶遇袭报告同时出现，使中东风险同时触及红海和海湾能源运输。",
+      "title_zh": "红海与霍尔木兹风险正在从单点事件扩展为区域物流压力",
+      "uncertainties_zh": ["霍尔木兹事件责任与损害尚未独立核实。", "运价、保险报价和实际绕航数据仍待观察。"]
+    }
+  ],
+  "opportunity_hypothesis": null,
+  "speech_text": "今天有两个值得关注的变化。第一，前沿 AI 的减速倡议迅速遇到美国政治阻力，安全讨论正进入国家竞争与监管权限的冲突。第二，也门与霍尔木兹的新事件使中东风险同时触及红海和海湾能源运输。现有证据不足以提出新的商业机会假设。",
+  "status": "partial"
+}
