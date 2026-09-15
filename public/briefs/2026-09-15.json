@@ -1,0 +1,43 @@
+{
+  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-09-15.md",
+  "date": "2026-09-15",
+  "events": [
+    {"confidence":"medium","id":"us-ai-risk-hoax-statement","sources":[{"name":"AP","url":"https://apnews.com/article/b85df16775ff7e9611a456b061a0e4b9"}],"summary":"President Trump called AI takeover risks a hoax and opposed limits on development.","title":"Trump escalates opposition to AI restrictions"},
+    {"confidence":"medium","id":"china-ai-safety-response","sources":[{"name":"AP","url":"https://apnews.com/article/3da458d2c078da3e60900728d59f1ae8"}],"summary":"China criticised Anthropic CEO Dario Amodei's warnings about Chinese AI development.","title":"China pushes back on Anthropic safety warnings"},
+    {"confidence":"medium","id":"singapore-ai-testing-response","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/ai-slowdown-regulations-testing-chatgpt-claude-xai-6383491"}],"summary":"Singapore experts and industry participants expect longer testing, staged rollouts and tighter agent limits if development slows.","title":"Singapore industry maps AI slowdown to testing practices"},
+    {"confidence":"medium","id":"oil-yields-dollar-transmission","sources":[{"name":"Reuters via MarketScreener","url":"https://in.marketscreener.com/news/dollar-near-two-week-high-as-oil-surge-lifts-yields-fed-hike-bets-ce785bddd98bf723"}],"summary":"Higher oil prices lifted Treasury yields, the dollar and expectations of a Federal Reserve rate increase.","title":"Oil shock transmits into yields and dollar"},
+    {"confidence":"medium","id":"fed-rate-hike-expectation","sources":[{"name":"AP","url":"https://apnews.com/article/ffd60cca8bb045bb9b1c389f5f1b73af"}],"summary":"The Federal Reserve was widely expected to raise its benchmark rate to address persistent inflation.","title":"Federal Reserve expected to raise rates"},
+    {"confidence":"high","id":"singapore-haze-national-unhealthy","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/singapore-haze-psi-unhealthy-6382851"}],"summary":"All five Singapore regions recorded unhealthy air quality, the first nationwide occurrence since 2019.","title":"Unhealthy air quality reaches all Singapore regions"}
+  ],
+  "generated_at": "2026-09-15T13:00:51+08:00",
+  "intelligence_themes": [
+    {
+      "change_state":"continuing","change_summary_zh":"美国反对立场进一步强化，中国加入反对叙事；新加坡企业开始把争论转化为测试、分阶段发布和 agent 权限控制。","confidence":"medium","counter_evidence_zh":["政治表态不等于最终政策，企业是否真正延长测试仍待观察。"],
+      "event_ids":["us-ai-risk-hoax-statement","china-ai-safety-response","singapore-ai-testing-response"],
+      "evidence":[{"event_id":"us-ai-risk-hoax-statement","source_name":"AP","url":"https://apnews.com/article/b85df16775ff7e9611a456b061a0e4b9"},{"event_id":"china-ai-safety-response","source_name":"AP","url":"https://apnews.com/article/3da458d2c078da3e60900728d59f1ae8"},{"event_id":"singapore-ai-testing-response","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/ai-slowdown-regulations-testing-chatgpt-claude-xai-6383491"}],
+      "id":"theme_9f2d4c7a6b1e8035",
+      "impact_chain":[{"affected_actors_zh":["跨国 AI 公司","AI 产品团队","受监管企业"],"cause_zh":"国家竞争叙事与企业安全要求同时增强","confidence":"medium","effect_zh":"企业需自行维护跨司法辖区控制，并延长高风险工作流回归测试","evidence_event_ids":["us-ai-risk-hoax-statement","china-ai-safety-response","singapore-ai-testing-response"],"mechanism_zh":"宏观规则分化，而模型发布和 agent 权限仍需在企业内部落地"}],
+      "lanes":["AI/Technology","Politics","Business","Singapore/Asia"],
+      "problem_signals":[{"evidence_event_ids":["singapore-ai-testing-response"],"problem_zh":"AI 产品团队难以在基础模型频繁变化时持续证明关键工作流安全、稳定且可回滚","type":"operational","who_has_it_zh":["使用第三方模型的 AI 产品团队","AI 治理团队"]}],
+      "reporting_date":"2026-09-15","score":89,"score_rationale_zh":"主题连续出现实质新发展，并增加可执行的企业流程证据；因政策和实施结果未知而扣分。","thesis_zh":"AI 安全宏观共识继续分裂，但企业层面的治理工作已从原则转为发布、测试和权限流程。","title_zh":"AI 安全争论继续政治化，但企业执行问题开始变得具体","uncertainties_zh":["CNA 受访者描述的是预期影响，而非行业统计。"]
+    },
+    {
+      "change_state":"continuing","change_summary_zh":"中东运输风险新增美元、国债收益率和加息预期的市场传导，不是重复冲突报道。","confidence":"medium","counter_evidence_zh":["市场已提前定价，正式决议后资产反应可能逆转。"],
+      "event_ids":["oil-yields-dollar-transmission","fed-rate-hike-expectation"],
+      "evidence":[{"event_id":"oil-yields-dollar-transmission","source_name":"Reuters via MarketScreener","url":"https://in.marketscreener.com/news/dollar-near-two-week-high-as-oil-surge-lifts-yields-fed-hike-bets-ce785bddd98bf723"},{"event_id":"fed-rate-hike-expectation","source_name":"AP","url":"https://apnews.com/article/ffd60cca8bb045bb9b1c389f5f1b73af"}],
+      "id":"theme_7a31e9c4d8b260f5","impact_chain":[{"affected_actors_zh":["亚洲进口商","企业财务团队","新加坡贸易与供应链企业"],"cause_zh":"油价上涨与持续通胀压力并存","confidence":"medium","effect_zh":"美元、融资成本与亚洲进口成本可能同时上升","evidence_event_ids":["oil-yields-dollar-transmission","fed-rate-hike-expectation"],"mechanism_zh":"能源冲击抬高通胀和利率预期并压低风险偏好"}],
+      "lanes":["Business","Politics","Singapore/Asia"],"problem_signals":[{"evidence_event_ids":["oil-yields-dollar-transmission","fed-rate-hike-expectation"],"problem_zh":"企业难以及时合并油价、汇率、利率和运输风险暴露","type":"operational","who_has_it_zh":["企业财务团队","供应链团队"]}],
+      "reporting_date":"2026-09-15","score":85,"score_rationale_zh":"存在清楚的跨市场传导证据，但政策决定和持续时间仍不确定。","thesis_zh":"中东供应风险正从航运和油价传导到美元、债券收益率、利率预期与亚洲资产。","title_zh":"油价冲击开始通过通胀预期传导到利率与亚洲资产","uncertainties_zh":["美联储尚未正式决定加息。","油价冲击持续时间未知。"]
+    },
+    {
+      "change_state":"insufficient_history","change_summary_zh":"空气质量从部分区域不健康升级为五区全部不健康；缺少同主题结构化历史，保留为单事件分析。","confidence":"high","counter_evidence_zh":["风向变化可能迅速改善空气质量。"],
+      "event_ids":["singapore-haze-national-unhealthy"],"evidence":[{"event_id":"singapore-haze-national-unhealthy","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/singapore-haze-psi-unhealthy-6382851"}],"id":"theme_36ab8e1f902c74d5",
+      "impact_chain":[{"affected_actors_zh":["户外工作人员","学校","敏感人群","现场运营企业"],"cause_zh":"烟羽与风向变化使五区 PSI 全部进入不健康区间","confidence":"high","effect_zh":"健康防护、户外活动和现场作业安排受到全国性影响","evidence_event_ids":["singapore-haze-national-unhealthy"],"mechanism_zh":"跨境烟霾提高颗粒物暴露"}],
+      "lanes":["Singapore/Asia","Politics","Business"],"problem_signals":[{"evidence_event_ids":["singapore-haze-national-unhealthy"],"problem_zh":"分布式团队需要把区域空气质量与现场作业规则快速转成一致安排","type":"operational","who_has_it_zh":["户外作业企业","学校与活动组织者"]}],
+      "reporting_date":"2026-09-15","score":76,"score_rationale_zh":"官方指标显示全国范围实质恶化，影响明确；持续时间和独立来源有限。","thesis_zh":"新加坡五区空气质量全部进入不健康范围，烟霾已成为全国性的健康与运营约束。","title_zh":"新加坡烟霾从局部异常升级为全国不健康水平","uncertainties_zh":["本次只收集到一个直接本地来源。","单日恶化不等于长期烟霾季。"]
+    }
+  ],
+  "opportunity_hypothesis":{"ai_leverage_zh":"AI 只辅助生成候选测试、归类失败和起草带证据的差异报告；门槛、权限和上线决定保持确定性与人工控制。","confidence":"low","current_solution_zh":"团队维护人工测试脚本、零散评测集和上线前检查表。","evidence_event_ids":["singapore-ai-testing-response"],"gap_zh":"模型行为、工具调用和权限边界同时变化，结果难比较且缺少可审计的版本证据。","key_assumptions_zh":["团队存在重复回归成本","现有工具不能直接产出所需审计证据","客户允许保存脱敏测试记录"],"next_validation_step_zh":"访谈五个使用 agents 的新加坡或区域团队，并用一次真实模型升级复盘测试耗时与遗漏项。","potential_buyer_zh":["AI-native startup CTO","AI platform lead","模型风险团队"],"potential_product_zh":"可测试一个为第三方模型升级生成版本回归证据包的轻量工具。","problem_zh":"AI 产品团队难以在基础模型频繁变化时持续证明关键工作流安全、稳定且可回滚","who_has_it_zh":["使用第三方模型的 AI 产品团队","AI 治理团队"]},
+  "speech_text":"今天值得关注三件事：AI 安全共识继续分裂，但企业测试问题变得具体；油价冲击开始传导到美元、收益率和亚洲资产；新加坡五区空气质量全部进入不健康范围。今天值得验证的机会，是为模型升级生成可审计的 agent 回归证据包。",
+  "status":"partial"
+}
