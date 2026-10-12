@@ -1,95 +1,146 @@
 {
-  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-10-12.md",
-  "date": "2026-10-12",
+  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-10-13.md",
+  "date": "2026-10-13",
   "events": [
     {
       "confidence": "high",
-      "id": "singapore-haze-primary-care-activation",
-      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-subsidy-scheme-gp-clinics-polyclinics-moh-6449066"}],
-      "summary": "新加坡在急诊和综合诊疗所呼吸道病例按周增加后，于 10 月 12 日启用 PHPC 与雾霾补贴安排；约 1,000 家诊所表示参与，合资格患者费用受上限保护。",
-      "title": "新加坡把雾霾应对从预备阈值推进到基层医疗分流"
+      "id": "singapore-ai-entry-level-career-rung",
+      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/lawrence-wong-ai-jobs-training-6452176"}],
+      "summary": "新加坡总理 Lawrence Wong 表示，AI 可能自动化年轻员工借以学习的例行工作，政府正研究各行业的培训与导师机制；MOM 数据显示，采用 AI 的企业中 6.2% 减少人数，另有 8.5% 降低招聘活动。",
+      "title": "新加坡开始把 AI 对初级岗位学习链的影响列为政策问题"
     },
     {
       "confidence": "high",
-      "id": "singapore-haze-unhealthy-all-regions",
-      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-psi-singapore-air-quality-6449771"}],
-      "summary": "10 月 11 日晚新加坡五个区域的 24 小时 PSI 均处于不健康水平，范围为 108 至 152；NEA 预计未来 24 小时仍为不健康，并指苏门答腊南部和西加里曼丹烟霾可能继续随风飘入。",
-      "title": "新加坡全岛空气质量持续处于不健康范围"
+      "id": "imf-ai-growth-jobs-reallocation",
+      "sources": [{"name": "Reuters via CNA", "url": "https://www.channelnewsasia.com/business/imf-says-ai-investment-keeps-global-growth-around-3-major-asia-benefits-6451936"}],
+      "summary": "IMF 认为 AI 基础设施投资正在支撑约 3% 的全球增长，并可能为亚洲经济体带来额外增长；同时估计长期有 40% 的岗位会被增强、降级或消除，例行工作收缩而部分新增岗位集中在较低薪的建筑与数据中心领域。",
+      "title": "AI 投资同时制造亚洲增长红利与岗位结构错配"
     },
     {
-      "confidence": "high",
-      "id": "johor-haze-school-closures-extended",
-      "sources": [{"name": "CNA / Agencies", "url": "https://www.channelnewsasia.com/asia/malaysia-johor-school-closure-extended-oct-16-6449831"}],
-      "summary": "Johor 将 1,198 所学校和教育机构的关闭延长至 10 月 16 日，影响约 617,258 名学生，并以居家教学和延期考试维持教学安排。",
-      "title": "Johor 将学校关闭延长五天"
+      "confidence": "medium",
+      "id": "singapore-pm-independent-ai-audit",
+      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/lawrence-wong-ai-jobs-training-6452176"}],
+      "summary": "Lawrence Wong 提出可逐步建立独立任命的国际 AI 治理委员会和独立审计流程，同时承认短期形成国际强制规则并不现实。",
+      "title": "新加坡提出以独立审计推动国际 AI 安全标准"
     },
     {
-      "confidence": "high",
-      "id": "firefly-subang-seletar-haze-cancellations",
-      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/asia/malaysia-firefly-flights-cancelled-seletar-airport-subang-6449996"}],
-      "summary": "Firefly 取消截至 10 月 12 日的全部 Subang—Seletar 航班，共六个每日往返班次，并尝试把旅客转至 Kuala Lumpur International Airport—Changi 的 Malaysia Airlines 航班。",
-      "title": "雾霾迫使 Subang—Seletar 航线全面停飞"
+      "confidence": "medium",
+      "id": "tiktok-agent-permission-cyber-risk",
+      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/tiktok-ceo-shou-chew-ai-6451691"}],
+      "summary": "TikTok CEO Chew Shou Zi 警告用户可能在不理解权限的情况下让 agent 使用信用卡，企业也面对 AI 降低垃圾内容和攻击制造成本的问题，并强调员工需要明确公共聊天机器人的数据边界。",
+      "title": "Agent 权限与攻击成本下降成为企业级 AI 风险"
     }
   ],
-  "generated_at": "2026-10-12T10:30:07+08:00",
+  "generated_at": "2026-10-13T07:56:06+08:00",
   "intelligence_themes": [
     {
-      "change_state": "accelerating",
-      "change_summary_zh": "过去 7 个有效日，雾霾主题主要表现为 PSI 上升、户外活动调整和达到阈值后才启用的预案；今天新增实际医疗分流、跨境航班全面取消以及 Johor 大规模延长停课，独立运营系统的中断由预防性准备转为执行。过去 30/90 个有效日虽反复出现空气质量恶化，但未同时出现医疗、教育和跨境交通三条已执行的影响链。",
+      "change_state": "new",
+      "change_summary_zh": "过去 7/30/90 个有效日主要跟踪 AI 采用率、生产率和企业岗位增减；今天首次由新加坡政府把问题明确推进到“初级岗位是否仍能承担学习功能”，并由 IMF 的跨经济体分析补充岗位被增强、降级或消除的结构变化。变化不只是岗位数量，而是人才形成机制可能先于总就业出现断层。",
       "confidence": "high",
       "counter_evidence_zh": [
-        "新加坡 PSI 已从本季峰值 192 回落至 108—152，尚未达到发放 N95 口罩的 200 阈值或学校关闭的 300 阈值。",
-        "F1 期间部分商业活动需求未明显下降，说明影响并非均匀扩散至所有消费场景。",
-        "降雨与风向变化可能在短期内改善空气质量，当前中断不必然持续到本周以后。"
+        "采用 AI 的多数新加坡企业报告的是岗位重设计、AI 新岗位或人员转岗，并非直接裁员。",
+        "例行工作自动化也可能释放导师时间并创造更高价值的初级任务，职业阶梯断裂尚不是已证实结果。",
+        "IMF 的 40% 是长期全球估计，不能直接当作新加坡就业预测。"
       ],
-      "event_ids": ["singapore-haze-primary-care-activation", "singapore-haze-unhealthy-all-regions", "johor-haze-school-closures-extended", "firefly-subang-seletar-haze-cancellations"],
+      "event_ids": ["singapore-ai-entry-level-career-rung", "imf-ai-growth-jobs-reallocation"],
       "evidence": [
-        {"event_id": "singapore-haze-primary-care-activation", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-subsidy-scheme-gp-clinics-polyclinics-moh-6449066"},
-        {"event_id": "singapore-haze-unhealthy-all-regions", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-psi-singapore-air-quality-6449771"},
-        {"event_id": "johor-haze-school-closures-extended", "source_name": "CNA / Agencies", "url": "https://www.channelnewsasia.com/asia/malaysia-johor-school-closure-extended-oct-16-6449831"},
-        {"event_id": "firefly-subang-seletar-haze-cancellations", "source_name": "CNA", "url": "https://www.channelnewsasia.com/asia/malaysia-firefly-flights-cancelled-seletar-airport-subang-6449996"}
+        {"event_id": "singapore-ai-entry-level-career-rung", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/lawrence-wong-ai-jobs-training-6452176"},
+        {"event_id": "imf-ai-growth-jobs-reallocation", "source_name": "Reuters via CNA", "url": "https://www.channelnewsasia.com/business/imf-says-ai-investment-keeps-global-growth-around-3-major-asia-benefits-6451936"}
       ],
-      "id": "theme_e52a7d19c4b830f6",
+      "id": "theme_b41f8d27c6a930e5",
       "impact_chain": [
         {
-          "affected_actors_zh": ["基层诊所与综合诊疗所", "急诊部门", "呼吸道疾病患者", "雇主与户外工作者"],
-          "cause_zh": "全岛空气质量持续不健康，呼吸道就诊按周增加",
+          "affected_actors_zh": ["应届毕业生与初级员工", "部门经理与导师", "企业人力资源团队", "职业教育与政府培训机构"],
+          "cause_zh": "AI 优先接管记录、初稿、资料整理等低风险例行任务",
           "confidence": "high",
-          "effect_zh": "政府启用近 1,000 家参与诊所的补贴与分流机制，以免轻症需求继续挤压急诊资源",
-          "evidence_event_ids": ["singapore-haze-primary-care-activation", "singapore-haze-unhealthy-all-regions"],
-          "mechanism_zh": "颗粒物暴露增加症状和就医需求；费用上限与 PHPC 网络把可由基层处理的患者从医院急诊导流"
+          "effect_zh": "企业获得生产率，但年轻员工减少在真实工作中观察、练习、犯低成本错误并获得反馈的机会",
+          "evidence_event_ids": ["singapore-ai-entry-level-career-rung"],
+          "mechanism_zh": "传统初级任务同时承担产出与隐性培训功能；自动化只替代产出环节时，学习环节不会自动被新的训练设计补上"
         },
         {
-          "affected_actors_zh": ["Johor 学生与家长", "学校与考试管理者", "跨境航空旅客", "Firefly 与机场运营者"],
-          "cause_zh": "烟霾覆盖跨境区域且未来风向仍可能输送污染",
-          "confidence": "high",
-          "effect_zh": "学校关闭延长、考试调整、航班取消并产生改签与退款工作量",
-          "evidence_event_ids": ["johor-haze-school-closures-extended", "firefly-subang-seletar-haze-cancellations"],
-          "mechanism_zh": "能见度和健康风险分别触发交通与教育机构的运营限制，影响从个人防护扩大为服务连续性问题"
+          "affected_actors_zh": ["亚洲硬件与基础设施供应商", "例行知识工作者", "毕业生", "财政与劳动政策制定者"],
+          "cause_zh": "资本密集型 AI 基础设施投资形成需求冲击，同时压缩部分例行工作",
+          "confidence": "medium",
+          "effect_zh": "GDP 与资本投资可以增长，但新岗位的技能、地点和工资结构未必匹配被压缩的岗位",
+          "evidence_event_ids": ["imf-ai-growth-jobs-reallocation"],
+          "mechanism_zh": "收益先流向算力、设备与资本供应链，而劳动需求从例行白领任务转向 AI 技能及建筑、数据中心等不同工种"
         }
       ],
-      "lanes": ["Singapore/Asia", "Business", "Politics"],
+      "lanes": ["Singapore/Asia", "AI/Technology", "Business"],
       "problem_signals": [
         {
-          "evidence_event_ids": ["singapore-haze-primary-care-activation", "johor-haze-school-closures-extended", "firefly-subang-seletar-haze-cancellations"],
-          "problem_zh": "同一场跨境雾霾同时触发医疗、学校与航空的不同阈值和替代流程，公众与运营者难以获得一致、可执行的服务状态与下一步安排",
-          "type": "operational",
-          "who_has_it_zh": ["跨境旅客与家庭", "基层医疗网络", "学校和考试管理者", "航空公司客服与运营团队"]
+          "evidence_event_ids": ["singapore-ai-entry-level-career-rung", "imf-ai-growth-jobs-reallocation"],
+          "problem_zh": "企业能衡量 AI 节省了多少工时，却缺少方法确认自动化后初级员工是否仍获得晋升所需的真实任务、反馈与能力证据",
+          "type": "labor",
+          "who_has_it_zh": ["采用 AI 的企业部门负责人", "初级员工与毕业生", "人力资源和学习发展团队", "公共培训机构"]
         }
       ],
-      "reporting_date": "2026-10-12",
-      "score": 97,
-      "score_rationale_zh": "四个事件形成空气质量、就医需求、政策响应和实际服务中断的完整链条，并横跨新加坡与 Johor；独立证据链来自政府监测、医疗启用、教育决定和航空运营动作。报道主要由 CNA 汇集，且天气持续时间仍不确定。",
-      "thesis_zh": "区域雾霾已经越过“提醒公众减少户外活动”的阶段，开始同时改写基层医疗分流、学校运行和跨境航空安排；当前最重要的变化不是 PSI 数字本身，而是多个公共与商业系统已实际切换到异常运行模式。",
-      "title_zh": "雾霾影响从健康提醒升级为医疗、教育与跨境交通的同步运营中断",
+      "reporting_date": "2026-10-13",
+      "score": 96,
+      "score_rationale_zh": "新加坡政策表态、MOM 企业数据和 IMF 跨经济体分析共同指出生产率与人才形成之间的机制性张力；但尚无纵向数据证明职业阶梯已经断裂。",
+      "thesis_zh": "AI 对就业最先暴露的风险可能不是大规模失业，而是企业在自动化初级任务时一并移除了培养资深人才的练习场；GDP 和生产率增长不能替代职业阶梯是否仍然完整这一指标。",
+      "title_zh": "AI 就业风险从“会不会裁员”转向“下一代资深人才如何形成”",
       "uncertainties_zh": [
-        "CNA 报道引用多个机构与企业，但尚缺少其他媒体对全部事件的独立交叉报道。",
-        "风向、降雨和火点变化很快，无法从一天数据判断中断持续时长。",
-        "目前没有统一披露因雾霾新增的基层就诊量、航班旅客人数与居家教学效果。"
+        "政府尚未公布拟研究行业、方案设计和衡量培训质量的指标。",
+        "MOM 比例反映企业自报结果，未说明岗位、行业和采用强度差异。",
+        "Reuters 对 IMF 讲话的报道是独立信源，但两项证据都不是跟踪同一批员工的纵向研究。"
+      ]
+    },
+    {
+      "change_state": "continuing",
+      "change_summary_zh": "过去 7 个有效日已有高风险 AI 的可验证证据、第三方责任、agent 权限控制及现实误动作案例；今天新增两层治理信号：企业平台明确指出权限授权和攻击成本下降的操作风险，新加坡总理把独立审计与国际治理委员会提出为逐步标准化路径。主题继续扩大，但没有足够独立证据证明国际规则正在加速落地。",
+      "confidence": "medium",
+      "counter_evidence_zh": [
+        "国际治理委员会和审计机制仍是建议，并无成员、授权、时间表或强制执行安排。",
+        "Chew Shou Zi 的信用卡与 spam 例子说明风险机制，不是 TikTok 已发生特定重大事故的披露。",
+        "企业培训和自愿标准可降低部分风险，不代表必须建立新的全球机构。"
+      ],
+      "event_ids": ["singapore-pm-independent-ai-audit", "tiktok-agent-permission-cyber-risk"],
+      "evidence": [
+        {"event_id": "singapore-pm-independent-ai-audit", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/lawrence-wong-ai-jobs-training-6452176"},
+        {"event_id": "tiktok-agent-permission-cyber-risk", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/tiktok-ceo-shou-chew-ai-6451691"}
+      ],
+      "id": "theme_9f2d4c7a6b1e8035",
+      "impact_chain": [
+        {
+          "affected_actors_zh": ["agent 使用者", "平台安全团队", "企业数据负责人", "支付与外部工具提供者"],
+          "cause_zh": "agent 获得支付、数据或外部系统权限，而使用者未充分理解授权范围",
+          "confidence": "medium",
+          "effect_zh": "错误购买、敏感信息泄露与低成本垃圾内容可能转化为真实财务和运营损失",
+          "evidence_event_ids": ["tiktok-agent-permission-cyber-risk"],
+          "mechanism_zh": "生成能力与工具权限结合后，错误或滥用从内容问题升级为可执行动作；攻击生成成本下降又扩大防守方负担"
+        },
+        {
+          "affected_actors_zh": ["前沿模型公司", "企业采购者", "投资者", "各国监管机构"],
+          "cause_zh": "各实验室安全标准不一致且跨境系统缺少共同验证方式",
+          "confidence": "medium",
+          "effect_zh": "独立审计可能把安全承诺转为可比较证据，并由客户和资本市场提供参与激励",
+          "evidence_event_ids": ["singapore-pm-independent-ai-audit"],
+          "mechanism_zh": "共同审计标准降低买方验证成本，但只有获得治理授权和市场采纳后才会形成约束"
+        }
+      ],
+      "lanes": ["AI/Technology", "Politics", "Business", "Singapore/Asia"],
+      "problem_signals": [
+        {
+          "evidence_event_ids": ["singapore-pm-independent-ai-audit", "tiktok-agent-permission-cyber-risk"],
+          "problem_zh": "企业难以用一致证据判断 agent 的权限边界、数据处理和外部动作控制是否达到可接受标准",
+          "type": "regulatory",
+          "who_has_it_zh": ["采购或部署 agent 的企业", "平台安全团队", "审计与监管机构", "模型供应商"]
+        }
+      ],
+      "reporting_date": "2026-10-13",
+      "score": 91,
+      "score_rationale_zh": "权限风险与独立审计之间存在清晰治理机制，并延续过去一周的现实事件；但两条当日证据来自同一场会议及同一媒体，政策仍停留在倡议阶段。",
+      "thesis_zh": "AI 治理正在从笼统的安全原则分化成两个可操作问题：谁能授权 agent 做什么，以及由谁独立验证控制有效；新加坡提出国际独立审计方向，但短期约束仍主要落在企业自身。",
+      "title_zh": "Agent 治理开始聚焦权限边界与独立审计，但国际规则仍停留在倡议期",
+      "uncertainties_zh": [
+        "两条当日证据来自同一场 DBS 会议并由 CNA 报道，不能当作独立趋势加速证据。",
+        "国际审计标准由谁制定、如何访问封闭模型以及审计结果是否公开均未知。",
+        "企业真实 agent 事故率、损失规模和现有控制覆盖率未披露。"
       ]
     }
   ],
   "opportunity_hypothesis": null,
-  "speech_text": "今天只有一个主题达到推送门槛，但变化很实质：区域雾霾已经从空气质量提醒升级为医疗、教育和跨境交通的同步运营中断。新加坡启用基层医疗补贴与分流，Johor 延长关闭超过一千所学校，Firefly 取消全部 Subang 至 Seletar 航班。证据尚不足以提出一个具有有限 AI 优势、可验证买方和明确缺口的商业机会，因此今天不生成机会假设。",
+  "speech_text": "今天有两个主题达到门槛。第一，AI 就业风险的焦点从是否裁员转向职业阶梯是否仍能培养下一代资深人才；生产率和 GDP 增长不能替代这个指标。第二，agent 治理正在聚焦权限边界与独立审计，但国际规则仍只是倡议，短期责任主要落在企业。今天没有足够买方和 AI 优势证据，因此不提出商业机会假设。",
   "status": "partial"
 }
