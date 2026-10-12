@@ -1,0 +1,95 @@
+{
+  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-10-12.md",
+  "date": "2026-10-12",
+  "events": [
+    {
+      "confidence": "high",
+      "id": "singapore-haze-primary-care-activation",
+      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-subsidy-scheme-gp-clinics-polyclinics-moh-6449066"}],
+      "summary": "新加坡在急诊和综合诊疗所呼吸道病例按周增加后，于 10 月 12 日启用 PHPC 与雾霾补贴安排；约 1,000 家诊所表示参与，合资格患者费用受上限保护。",
+      "title": "新加坡把雾霾应对从预备阈值推进到基层医疗分流"
+    },
+    {
+      "confidence": "high",
+      "id": "singapore-haze-unhealthy-all-regions",
+      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-psi-singapore-air-quality-6449771"}],
+      "summary": "10 月 11 日晚新加坡五个区域的 24 小时 PSI 均处于不健康水平，范围为 108 至 152；NEA 预计未来 24 小时仍为不健康，并指苏门答腊南部和西加里曼丹烟霾可能继续随风飘入。",
+      "title": "新加坡全岛空气质量持续处于不健康范围"
+    },
+    {
+      "confidence": "high",
+      "id": "johor-haze-school-closures-extended",
+      "sources": [{"name": "CNA / Agencies", "url": "https://www.channelnewsasia.com/asia/malaysia-johor-school-closure-extended-oct-16-6449831"}],
+      "summary": "Johor 将 1,198 所学校和教育机构的关闭延长至 10 月 16 日，影响约 617,258 名学生，并以居家教学和延期考试维持教学安排。",
+      "title": "Johor 将学校关闭延长五天"
+    },
+    {
+      "confidence": "high",
+      "id": "firefly-subang-seletar-haze-cancellations",
+      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/asia/malaysia-firefly-flights-cancelled-seletar-airport-subang-6449996"}],
+      "summary": "Firefly 取消截至 10 月 12 日的全部 Subang—Seletar 航班，共六个每日往返班次，并尝试把旅客转至 Kuala Lumpur International Airport—Changi 的 Malaysia Airlines 航班。",
+      "title": "雾霾迫使 Subang—Seletar 航线全面停飞"
+    }
+  ],
+  "generated_at": "2026-10-12T10:30:07+08:00",
+  "intelligence_themes": [
+    {
+      "change_state": "accelerating",
+      "change_summary_zh": "过去 7 个有效日，雾霾主题主要表现为 PSI 上升、户外活动调整和达到阈值后才启用的预案；今天新增实际医疗分流、跨境航班全面取消以及 Johor 大规模延长停课，独立运营系统的中断由预防性准备转为执行。过去 30/90 个有效日虽反复出现空气质量恶化，但未同时出现医疗、教育和跨境交通三条已执行的影响链。",
+      "confidence": "high",
+      "counter_evidence_zh": [
+        "新加坡 PSI 已从本季峰值 192 回落至 108—152，尚未达到发放 N95 口罩的 200 阈值或学校关闭的 300 阈值。",
+        "F1 期间部分商业活动需求未明显下降，说明影响并非均匀扩散至所有消费场景。",
+        "降雨与风向变化可能在短期内改善空气质量，当前中断不必然持续到本周以后。"
+      ],
+      "event_ids": ["singapore-haze-primary-care-activation", "singapore-haze-unhealthy-all-regions", "johor-haze-school-closures-extended", "firefly-subang-seletar-haze-cancellations"],
+      "evidence": [
+        {"event_id": "singapore-haze-primary-care-activation", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-subsidy-scheme-gp-clinics-polyclinics-moh-6449066"},
+        {"event_id": "singapore-haze-unhealthy-all-regions", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-psi-singapore-air-quality-6449771"},
+        {"event_id": "johor-haze-school-closures-extended", "source_name": "CNA / Agencies", "url": "https://www.channelnewsasia.com/asia/malaysia-johor-school-closure-extended-oct-16-6449831"},
+        {"event_id": "firefly-subang-seletar-haze-cancellations", "source_name": "CNA", "url": "https://www.channelnewsasia.com/asia/malaysia-firefly-flights-cancelled-seletar-airport-subang-6449996"}
+      ],
+      "id": "theme_e52a7d19c4b830f6",
+      "impact_chain": [
+        {
+          "affected_actors_zh": ["基层诊所与综合诊疗所", "急诊部门", "呼吸道疾病患者", "雇主与户外工作者"],
+          "cause_zh": "全岛空气质量持续不健康，呼吸道就诊按周增加",
+          "confidence": "high",
+          "effect_zh": "政府启用近 1,000 家参与诊所的补贴与分流机制，以免轻症需求继续挤压急诊资源",
+          "evidence_event_ids": ["singapore-haze-primary-care-activation", "singapore-haze-unhealthy-all-regions"],
+          "mechanism_zh": "颗粒物暴露增加症状和就医需求；费用上限与 PHPC 网络把可由基层处理的患者从医院急诊导流"
+        },
+        {
+          "affected_actors_zh": ["Johor 学生与家长", "学校与考试管理者", "跨境航空旅客", "Firefly 与机场运营者"],
+          "cause_zh": "烟霾覆盖跨境区域且未来风向仍可能输送污染",
+          "confidence": "high",
+          "effect_zh": "学校关闭延长、考试调整、航班取消并产生改签与退款工作量",
+          "evidence_event_ids": ["johor-haze-school-closures-extended", "firefly-subang-seletar-haze-cancellations"],
+          "mechanism_zh": "能见度和健康风险分别触发交通与教育机构的运营限制，影响从个人防护扩大为服务连续性问题"
+        }
+      ],
+      "lanes": ["Singapore/Asia", "Business", "Politics"],
+      "problem_signals": [
+        {
+          "evidence_event_ids": ["singapore-haze-primary-care-activation", "johor-haze-school-closures-extended", "firefly-subang-seletar-haze-cancellations"],
+          "problem_zh": "同一场跨境雾霾同时触发医疗、学校与航空的不同阈值和替代流程，公众与运营者难以获得一致、可执行的服务状态与下一步安排",
+          "type": "operational",
+          "who_has_it_zh": ["跨境旅客与家庭", "基层医疗网络", "学校和考试管理者", "航空公司客服与运营团队"]
+        }
+      ],
+      "reporting_date": "2026-10-12",
+      "score": 97,
+      "score_rationale_zh": "四个事件形成空气质量、就医需求、政策响应和实际服务中断的完整链条，并横跨新加坡与 Johor；独立证据链来自政府监测、医疗启用、教育决定和航空运营动作。报道主要由 CNA 汇集，且天气持续时间仍不确定。",
+      "thesis_zh": "区域雾霾已经越过“提醒公众减少户外活动”的阶段，开始同时改写基层医疗分流、学校运行和跨境航空安排；当前最重要的变化不是 PSI 数字本身，而是多个公共与商业系统已实际切换到异常运行模式。",
+      "title_zh": "雾霾影响从健康提醒升级为医疗、教育与跨境交通的同步运营中断",
+      "uncertainties_zh": [
+        "CNA 报道引用多个机构与企业，但尚缺少其他媒体对全部事件的独立交叉报道。",
+        "风向、降雨和火点变化很快，无法从一天数据判断中断持续时长。",
+        "目前没有统一披露因雾霾新增的基层就诊量、航班旅客人数与居家教学效果。"
+      ]
+    }
+  ],
+  "opportunity_hypothesis": null,
+  "speech_text": "今天只有一个主题达到推送门槛，但变化很实质：区域雾霾已经从空气质量提醒升级为医疗、教育和跨境交通的同步运营中断。新加坡启用基层医疗补贴与分流，Johor 延长关闭超过一千所学校，Firefly 取消全部 Subang 至 Seletar 航班。证据尚不足以提出一个具有有限 AI 优势、可验证买方和明确缺口的商业机会，因此今天不生成机会假设。",
+  "status": "partial"
+}
