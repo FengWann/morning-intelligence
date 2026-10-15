@@ -1,100 +1,73 @@
 {
-  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-10-14.md",
-  "date": "2026-10-14",
+  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-10-15.md",
+  "date": "2026-10-15",
   "events": [
-    {
-      "confidence": "high",
-      "id": "singapore-proactive-ai-cyber-strategy",
-      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/shanmugam-cybersecurity-strategy-csa-ai-6452641"}],
-      "summary": "新加坡第三版网络安全战略将投资 AI harness engineering、国家级持续监测和防护 DNS，并采用评估及安全接入最佳现有模型的路线，而不是为每个场景自研模型。",
-      "title": "新加坡网络防御从周期检查转向持续、国家级和 AI 辅助模式"
-    },
-    {
-      "confidence": "high",
-      "id": "singapore-ai-incident-realtime-disclosure-request",
-      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/cybersecurity-full-transparency-ai-attacks-rogue-6455271"}],
-      "summary": "新加坡要求 OpenAI、Anthropic、Google、Amazon 等科技公司在 AI 事件发生时近实时透明披露并提前通知政府；企业表达合作态度，但安排仍在讨论。",
-      "title": "新加坡把 AI 事件透明度要求推进到近实时披露"
-    },
-    {
-      "confidence": "high",
-      "id": "singapore-healthcare-network-nine-hour-outage",
-      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/public-hospitals-healthcare-system-disruptions-6454651"}],
-      "summary": "新加坡三大公共医疗集群因网络连接技术问题出现约九小时系统中断，影响预约、访客登记、缴费和热线；临床服务通过既有 downtime procedures 维持，未发现网络攻击迹象。",
-      "title": "公共医疗网络中断九小时但临床服务依靠降级流程维持"
-    },
-    {
-      "confidence": "high",
-      "id": "seletar-haze-sixteen-flight-diversions",
-      "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/seletar-airport-changi-airport-flights-haze-6454786"}],
-      "summary": "10 月 5 日至 11 日，Seletar Airport 因雾霾造成的低能见度分流 16 个航班；机场仍运营，但准备启用日间跑道灯、扩大起降间隔等措施。",
-      "title": "雾霾对航空的影响由单一航司停飞扩展为机场分流数据"
-    }
+    {"confidence": "high", "id": "singapore-fairs-agent-testing-kit", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/singapore-task-force-ai-related-cyber-threats-6457921"}], "summary": "IMDA 成立 FAIRS 跨行业工作组，并发布 agentic AI 安全可靠性测试 starter kit，要求测试完整行动轨迹、工具、数据、权限、日志和持续复测；实务指南预计 2027 年上半年发布。", "title": "新加坡把 agent 安全原则转化为测试流程与行业工作组"},
+    {"confidence": "high", "id": "singapore-anthropic-safety-mou-office", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/anthropic-office-safety-agreement-government-deal-6456671"}], "summary": "Anthropic 在新加坡设立办公室，并与政府签署涵盖 AI 安全、模型评估、负责任采用和事件响应的合作备忘录。", "title": "Anthropic 与新加坡建立模型评估和事件响应合作"},
+    {"confidence": "high", "id": "mas-ai-growth-concentration-2027", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/ai-tech-sectors-economic-growth-mas-6458136"}], "summary": "MAS 预计 AI 驱动的科技部门 2027 年仍是增长主力，但 2026 年科技相关行业贡献约 75% 的同比增长，扩张相对集中，且全球投资周期、融资压力和产能限制构成下行风险。", "title": "AI 继续支撑新加坡增长，但增长集中度成为风险指标"},
+    {"confidence": "high", "id": "indonesia-forest-fire-enforcement-cooperation", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/asia/indonesia-individuals-companies-suspects-forest-fires-haze-6458531"}, {"name": "CNA / Agencies", "url": "https://www.channelnewsasia.com/asia/indonesia-forest-fires-foreign-aid-firefighting-efforts-6457571"}], "summary": "印尼就森林与土地火灾列出 223 名个人和九家公司嫌疑人，封查 57 家企业，并考虑收紧小规模传统焚烧豁免；马来西亚与印尼首次讨论协作扑灭 Kalimantan 和 Sumatra 火灾。", "title": "雾霾应对开始从下游停课停飞转向上游执法和跨境灭火"}
   ],
-  "generated_at": "2026-10-14T07:56:01+08:00",
+  "generated_at": "2026-10-15T10:33:40+08:00",
   "intelligence_themes": [
     {
       "change_state": "accelerating",
-      "change_summary_zh": "过去 7 日，主题从高风险 AI 的证据要求、第三方责任和 agent 权限控制，推进到独立审计倡议；今天新加坡发布国家级执行路线，并明确要求科技公司近实时披露事件。变化在于治理开始同时覆盖模型选择、持续防御、事件信息和跨机构响应，而不再只是原则声明。",
+      "change_summary_zh": "过去 7 日从高风险 AI 证据、第三方责任和权限控制，推进到独立审计、国家级持续防御及近实时披露；今天再新增可直接使用的 agent 测试流程、跨行业 FAIRS 工作组，以及与 Anthropic 的模型评估和事件响应合作。独立执行组件持续增加，因而判断为加速，而不是把同场活动的报道数量当作加速。",
       "confidence": "high",
-      "counter_evidence_zh": ["科技公司目前只表达合作态度，近实时通知尚无强制法律、统一格式或时限。", "AI harness engineering、PDNS 和国家级 AI 协调系统仍需部署效果和误报数据验证。", "两篇报道源于同一场 Singapore International Cyber Week，不能把报道数量当作独立加速证据。"],
-      "event_ids": ["singapore-proactive-ai-cyber-strategy", "singapore-ai-incident-realtime-disclosure-request"],
-      "evidence": [
-        {"event_id": "singapore-proactive-ai-cyber-strategy", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/shanmugam-cybersecurity-strategy-csa-ai-6452641"},
-        {"event_id": "singapore-ai-incident-realtime-disclosure-request", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/cybersecurity-full-transparency-ai-attacks-rogue-6455271"}
-      ],
+      "counter_evidence_zh": ["starter kit 是可更新的初版指南，不是强制认证或法律义务。", "FAIRS 实务报告要到 2027 年上半年，短期成效尚不可见。", "Anthropic MOU 只建立合作框架，未披露测试权限、数据共享、事故通知时限或约束条款。"],
+      "event_ids": ["singapore-fairs-agent-testing-kit", "singapore-anthropic-safety-mou-office"],
+      "evidence": [{"event_id": "singapore-fairs-agent-testing-kit", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/singapore-task-force-ai-related-cyber-threats-6457921"}, {"event_id": "singapore-anthropic-safety-mou-office", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/anthropic-office-safety-agreement-government-deal-6456671"}],
       "id": "theme_9f2d4c7a6b1e8035",
       "impact_chain": [
-        {"affected_actors_zh": ["关键基础设施运营者", "CSA 与政府安全运营中心", "模型供应商", "企业安全团队"], "cause_zh": "AI 让攻击者以更高速度、规模和复杂度发现并利用漏洞", "confidence": "high", "effect_zh": "防御必须从周期评估和事后响应转为持续监测、主动狩猎与国家级协调", "evidence_event_ids": ["singapore-proactive-ai-cyber-strategy"], "mechanism_zh": "防守方通过模型评估与安全接入、PDNS、资产暴露发现和跨机构情报汇总缩短发现及修复时间"},
-        {"affected_actors_zh": ["政府事件响应团队", "OpenAI、Anthropic、Google、Amazon 等平台", "受影响机构与公众"], "cause_zh": "关键 AI 事件细节首先掌握在模型与平台公司手中", "confidence": "high", "effect_zh": "延迟披露会压缩政府遏制、通知和恢复时间，近实时共享成为国家防御依赖", "evidence_event_ids": ["singapore-ai-incident-realtime-disclosure-request"], "mechanism_zh": "把厂商遥测、事件调查和政府响应连接起来，才能在同一事件继续扩散前采取限制措施"}
+        {"affected_actors_zh": ["部署 agent 的企业", "AI 测试机构", "IMDA 与安全监管者", "模型供应商"], "cause_zh": "agent 即使最终输出正确，也可能在中间步骤越权访问数据或调用工具", "confidence": "high", "effect_zh": "测试范围从最终答案扩展到完整轨迹、权限、日志和持续复测", "evidence_event_ids": ["singapore-fairs-agent-testing-kit"], "mechanism_zh": "以真实场景重放和轨迹审查捕获只看最终输出会遗漏的错误与未授权动作"},
+        {"affected_actors_zh": ["Singapore AI Safety Institute", "Anthropic", "采用 Claude 的企业与公共机构"], "cause_zh": "前沿模型发布时能力与风险边界难以由单一参与者完全掌握", "confidence": "medium", "effect_zh": "公共评估机构与模型公司可更早交换评估和事件响应经验", "evidence_event_ids": ["singapore-anthropic-safety-mou-office"], "mechanism_zh": "把模型开发方的内部能力知识与政府测试、采用和事故处置需求连接起来"}
       ],
       "lanes": ["AI/Technology", "Politics", "Business", "Singapore/Asia"],
-      "problem_signals": [{"evidence_event_ids": ["singapore-proactive-ai-cyber-strategy", "singapore-ai-incident-realtime-disclosure-request"], "problem_zh": "国家和关键基础设施依赖外部模型，却缺少统一的模型评估、事件遥测、披露时限与跨机构响应接口", "type": "regulatory", "who_has_it_zh": ["政府网络防御机构", "关键基础设施运营者", "模型供应商", "企业安全运营中心"]}],
-      "reporting_date": "2026-10-14",
+      "problem_signals": [{"evidence_event_ids": ["singapore-fairs-agent-testing-kit", "singapore-anthropic-safety-mou-office"], "problem_zh": "部署方缺少持续、可审计的方法证明 agent 在整个行动轨迹中遵守权限、数据和工具边界", "type": "regulatory", "who_has_it_zh": ["企业 AI 治理团队", "agent 开发者", "测试与认证机构", "受监管行业"]}],
+      "reporting_date": "2026-10-15",
       "score": 98,
-      "score_rationale_zh": "正式国家战略、具体技术路线和对主要厂商的披露要求共同把治理从倡议推进到执行设计；但厂商义务仍属协商，成效指标尚未出现。",
-      "thesis_zh": "新加坡的 AI 安全路线正在从“给模型加护栏”转向“建立国家级防御操作系统”：既要能快速更换和评估模型，也要迫使掌握事故细节的平台更快共享信息。",
-      "title_zh": "新加坡把 AI 治理推进到国家级持续防御与近实时事件披露",
-      "uncertainties_zh": ["披露要求是否会立法、适用于哪些事件和怎样处理商业机密尚未说明。", "政府如何独立验证厂商信息的完整性未知。", "单一来源警告：两项事实均由 CNA 报道，虽然引用正式发布与多方直接表态，但没有其他媒体交叉核验。"]
-    },
-    {
-      "change_state": "new",
-      "change_summary_zh": "过去 7/30/90 个有效日没有公共医疗系统跨三大集群同时中断的主题；今天首次出现约九小时网络连接故障，并观察到降级流程在临床服务、人工登记、支付和药房环节的实际表现。",
-      "confidence": "high",
-      "counter_evidence_zh": ["临床服务和患者照护没有被报告为受损，多数下午到访患者影响有限。", "Synapxe 表示目前没有网络攻击迹象，不能把事件与同日 AI 网络安全战略建立因果关系。", "服务当日下午全部恢复，一次事件不足以证明系统性可靠性下降。"],
-      "event_ids": ["singapore-healthcare-network-nine-hour-outage"],
-      "evidence": [{"event_id": "singapore-healthcare-network-nine-hour-outage", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/public-hospitals-healthcare-system-disruptions-6454651"}],
-      "id": "theme_6c2e8f14a9d730b5",
-      "impact_chain": [{"affected_actors_zh": ["三大公共医疗集群", "患者与访客", "药房和热线人员", "Synapxe"], "cause_zh": "共享网络连接技术问题同时影响多个患者面对的数字服务", "confidence": "high", "effect_zh": "预约、登记、缴费、排队显示和热线出现延迟，但临床服务通过人工及替代渠道继续", "evidence_event_ids": ["singapore-healthcare-network-nine-hour-outage"], "mechanism_zh": "集中数字基础设施扩大单点故障范围，预设 downtime procedures、额外人员和替代支付渠道则把技术中断与临床中断隔离"}],
-      "lanes": ["Singapore/Asia", "Technology", "Business"],
-      "problem_signals": [{"evidence_event_ids": ["singapore-healthcare-network-nine-hour-outage"], "problem_zh": "跨医疗集群的共享数字服务中断时，机构需要迅速切换人工流程并向患者同步可用渠道、等待时间和恢复状态", "type": "operational", "who_has_it_zh": ["公共医疗集群运营团队", "Synapxe", "一线登记、药房与热线人员", "患者"]}],
-      "reporting_date": "2026-10-14",
-      "score": 92,
-      "score_rationale_zh": "事件覆盖全国三大医疗集群并持续九小时，且有明确的故障范围、恢复时间和降级流程证据；但影响总体受控、原因仍在调查且只有一次事件。",
-      "thesis_zh": "这次公共医疗系统中断暴露的不是临床失败，而是集中数字服务的共同故障域；真正降低伤害的是提前设计好的人工降级流程，而不是系统从不出错的假设。",
-      "title_zh": "医疗数字化的关键指标不只是在线率，而是断网时能否安全降级",
-      "uncertainties_zh": ["网络连接问题的根因、共同依赖组件和防复发措施尚未公布。", "没有统一披露受影响患者数量、人工流程成本和积压清理时间。", "单一来源警告：事件与现场影响均来自 CNA，主要依据 Synapxe、医疗集群和有限患者观察。"]
+      "score_rationale_zh": "今天出现测试方法、行业协调组织和模型公司合作三个执行组件，延续一周内的明确治理链；但均为初期框架，且主要由 CNA 报道。",
+      "thesis_zh": "新加坡的 agent 治理已从讨论‘是否安全’进入‘如何留下可审计证据’：完整行动轨迹、权限日志和持续复测正在成为比最终答案更重要的控制对象。",
+      "title_zh": "Agent 安全从原则走向轨迹测试、持续复测与厂商协作",
+      "uncertainties_zh": ["测试标准是否成为采购、监管或保险的强制要求未知。", "MOU 是否允许独立机构接触足够的模型和事故数据未披露。", "单一来源警告：两项事件均由 CNA 报道，虽引用 IMDA 与协议双方直接信息，但缺少其他媒体交叉核验。"]
     },
     {
       "change_state": "continuing",
-      "change_summary_zh": "昨天已确认雾霾导致基层医疗分流、Johor 停课和 Firefly 停飞；今天新增 10 月 5 日至 11 日累计 16 个 Seletar 航班分流及机场级应对措施，把航空影响从单一航司决定扩展为可量化的机场运营负担。",
+      "change_summary_zh": "过去 7/30 日已看到新加坡企业 AI 采用、半导体投资和区域数据中心需求上升；今天 MAS 首次把 2026 年约 75% 的同比增长归因于科技相关行业，并同时列出全球 AI 投资、融资和本地产能三项持续性条件。主题从‘AI 带来增长’推进到‘增长是否过度集中’。",
       "confidence": "high",
-      "counter_evidence_zh": ["Changi 和 Seletar 仍保持运营，16 次分流分布在七天内，并非机场全面中断。", "部分分流早于昨天的恶化阶段，不能全部当作今天新增影响。", "风向与降雨可能快速改善能见度。"],
-      "event_ids": ["seletar-haze-sixteen-flight-diversions"],
-      "evidence": [{"event_id": "seletar-haze-sixteen-flight-diversions", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/seletar-airport-changi-airport-flights-haze-6454786"}],
+      "counter_evidence_zh": ["MAS 认为订单积压和已承诺扩产可缓冲短期下行，尚无 AI 投资即将急剧收缩的信号。", "金融、建筑和国内服务也会贡献增长，科技集中度不等于经济立即失衡。", "半导体周期和 AI 最终需求可能分离，当前产量不能证明长期回报。"],
+      "event_ids": ["mas-ai-growth-concentration-2027"],
+      "evidence": [{"event_id": "mas-ai-growth-concentration-2027", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/ai-tech-sectors-economic-growth-mas-6458136"}],
+      "id": "theme_2c8f14a6d9e730b5",
+      "impact_chain": [{"affected_actors_zh": ["半导体制造商与供应商", "投资者与银行", "非科技企业", "经济与劳动力政策制定者"], "cause_zh": "全球 AI 资本开支和芯片订单推动新加坡科技制造扩产", "confidence": "high", "effect_zh": "短期产出、投资与金融活动增强，但整体增长对单一全球投资周期更敏感", "evidence_event_ids": ["mas-ai-growth-concentration-2027"], "mechanism_zh": "科技行业贡献约四分之三同比增长，使 hyperscaler 融资、芯片订单或产能变化更快传导至总体经济"}],
+      "lanes": ["Singapore/Asia", "Business", "AI/Technology"],
+      "problem_signals": [{"evidence_event_ids": ["mas-ai-growth-concentration-2027"], "problem_zh": "企业和政策制定者需要区分订单积压带来的短期确定性与 AI 资本开支周期带来的中期集中风险", "type": "market", "who_has_it_zh": ["制造业供应链企业", "银行与投资者", "经济规划机构", "依赖科技需求的服务商"]}],
+      "reporting_date": "2026-10-15",
+      "score": 94,
+      "score_rationale_zh": "MAS 提供增长贡献、订单、产能和风险框架，显著推进长期主题；但只有单一宏观报告，2027 仍属预测。",
+      "thesis_zh": "AI 正在成为新加坡增长引擎，也在制造增长集中风险：科技行业贡献约四分之三的同比扩张，意味着未来关键问题不只是增速，而是全球资本开支一旦转向时其他行业能否接棒。",
+      "title_zh": "AI 支撑新加坡 2027 增长，但四分之三增长来自科技是双刃剑",
+      "uncertainties_zh": ["MAS 没有给出 AI 相关活动与传统电子周期的精确拆分。", "未来利率、hyperscaler 现金流和最终 AI 收益会怎样影响订单未知。", "单一来源警告：证据来自 CNA 对 MAS 季度宏观评估的报道。"]
+    },
+    {
+      "change_state": "accelerating",
+      "change_summary_zh": "过去 7 日雾霾影响已从健康提醒扩展到医疗、停课、停飞和航班分流；今天新增 223 名个人、九家公司嫌疑人、57 家企业被封查，以及收紧焚烧豁免和首次马印协作讨论。应对链首次明显向火源责任、土地规则和跨境灭火上游移动。",
+      "confidence": "high",
+      "counter_evidence_zh": ["列为嫌疑人、封查或行政处罚不等于最终定罪，也未披露多数违法细节。", "印尼仍在评估外国援助的实际效用，跨境合作尚非已部署行动。", "火势强度据称开始下降，部分改善可能来自天气而非执法。"],
+      "event_ids": ["indonesia-forest-fire-enforcement-cooperation"],
+      "evidence": [{"event_id": "indonesia-forest-fire-enforcement-cooperation", "source_name": "CNA", "url": "https://www.channelnewsasia.com/asia/indonesia-individuals-companies-suspects-forest-fires-haze-6458531"}, {"event_id": "indonesia-forest-fire-enforcement-cooperation", "source_name": "CNA / Agencies", "url": "https://www.channelnewsasia.com/asia/indonesia-forest-fires-foreign-aid-firefighting-efforts-6457571"}],
       "id": "theme_e52a7d19c4b830f6",
-      "impact_chain": [{"affected_actors_zh": ["Seletar 航空公司与旅客", "空管与机场运营者", "地勤和户外工作人员"], "cause_zh": "雾霾降低能见度并使精密进近与地面作业风险上升", "confidence": "high", "effect_zh": "航班被分流、起降间隔可能扩大，机场需启用日间灯光并加强人员防护", "evidence_event_ids": ["seletar-haze-sixteen-flight-diversions"], "mechanism_zh": "安全裕度要求把能见度下降转化为更保守的流量管理和替代机场安排"}],
-      "lanes": ["Singapore/Asia", "Business"],
-      "problem_signals": [{"evidence_event_ids": ["seletar-haze-sixteen-flight-diversions"], "problem_zh": "持续低能见度下，航空公司、机场和旅客需要协调分流、重新排班与地面人员保护", "type": "operational", "who_has_it_zh": ["航空公司运营中心", "机场与空管", "旅客服务团队", "地勤雇主"]}],
-      "reporting_date": "2026-10-14",
-      "score": 90,
-      "score_rationale_zh": "官方累计数据量化了此前只见于航司取消的影响，并给出机场级机制；但主题已连续多日、机场仍正常运营且新增证据单一。",
-      "thesis_zh": "雾霾对航空的影响已不只是 Firefly 的预防性停飞：一周内 16 次分流说明低能见度正在持续消耗 Seletar 的运营弹性，但尚未演变为机场级停摆。",
-      "title_zh": "Seletar 一周 16 次航班分流，雾霾持续消耗航空运营弹性",
-      "uncertainties_zh": ["未披露分流航班的机型、旅客人数、延误时长和额外成本。", "无法区分每次分流中天气、能见度和运营判断的具体权重。", "单一来源警告：数据来自 CNA 转述 CAAS 与 CAG 联合回应。"]
+      "impact_chain": [{"affected_actors_zh": ["印尼土地与种植园经营者", "执法和消防机构", "马来西亚与新加坡居民和企业", "区域政府"], "cause_zh": "火点持续造成跨境烟霾，而下游停课、医疗和航空措施不能消除火源", "confidence": "high", "effect_zh": "政策开始提高纵火与违规经营成本，并探索共享灭火资源", "evidence_event_ids": ["indonesia-forest-fire-enforcement-cooperation"], "mechanism_zh": "刑事、行政和土地再种植限制改变火烧清地激励；跨境飞机、直升机和人员可扩充受限的现场能力"}],
+      "lanes": ["Singapore/Asia", "Politics", "Business"],
+      "problem_signals": [{"evidence_event_ids": ["indonesia-forest-fire-enforcement-cooperation"], "problem_zh": "区域雾霾治理长期偏重下游应急，上游火点责任、土地执法和跨境资源调度缺少连续、可核验的执行链", "type": "regulatory", "who_has_it_zh": ["印尼执法与消防机构", "土地和种植园监管者", "ASEAN 邻国政府", "受雾霾影响的学校、医疗和交通系统"]}],
+      "reporting_date": "2026-10-15",
+      "score": 96,
+      "score_rationale_zh": "嫌疑人、企业、烧毁面积和封查数量构成实质上游行动，并与援助和法律调整形成机制链；但司法结果和合作执行均未确定。",
+      "thesis_zh": "区域雾霾应对终于从管理受害者转向管理火源：执法、土地规则和跨境灭火如果真正落地，才可能改变每年重复停课、就医与航班中断的结构。",
+      "title_zh": "雾霾治理开始上移：从停课停飞转向追责企业、收紧烧地规则和跨境灭火",
+      "uncertainties_zh": ["273 宗报告与企业案件中有多少会形成定罪或有效修复未知。", "拟取消传统焚烧豁免的立法时间和执行能力未说明。", "两篇证据均由 CNA 及其 agencies 汇集，执法数字主要来自印尼政府，独立核验有限。"]
     }
   ],
   "opportunity_hypothesis": null,
-  "speech_text": "今天有三个主题达到门槛。新加坡把 AI 治理推进到国家级持续防御与近实时事件披露；公共医疗九小时系统中断显示数字化的关键不只是在线率，更是断网时安全降级；Seletar 一周 16 次航班分流说明雾霾继续消耗航空运营弹性。证据不足以证明一个具有明确买方和独特 AI 优势的新商业机会，因此今天不提出机会假设。",
+  "speech_text": "今天有三个主题达到门槛。新加坡把 agent 安全推进到完整轨迹测试、持续复测和厂商协作；AI 继续支撑 2027 增长，但科技贡献约四分之三增长也带来集中风险；区域雾霾治理开始从停课停飞上移到企业追责、土地规则和跨境灭火。今天仍没有足够证据证明一个具有明确买方和独特 AI 优势的新机会。",
   "status": "partial"
 }
