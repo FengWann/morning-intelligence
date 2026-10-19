@@ -1,0 +1,51 @@
+{
+  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-10-19.md",
+  "date": "2026-10-19",
+  "events": [
+    {"confidence": "high", "id": "singapore-haze-west-psi-230-business-losses", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-western-region-daily-routines-psi-businesses-6469406"}], "summary": "新加坡西部 24 小时 PSI 于 10 月 18 日上午达到 230，为今年全岛最高；受访零售和小贩商户称客流与营业额下降约 30% 至 80%，户外活动和儿童日常也被压缩。", "title": "新加坡西部 PSI 达 230，雾霾损失从预案转为可见经营冲击"},
+    {"confidence": "medium", "id": "indonesia-south-sumatra-dry-ice-haze-trial", "sources": [{"name": "Agencies via CNA", "url": "https://www.channelnewsasia.com/asia/indonesia-drops-24-tonnes-dry-ice-over-south-sumatra-tackle-haze-6469171"}], "summary": "印尼在南苏门答腊投放 2.4 吨干冰试验驱散雾霾，机场能见度由 1,000 米改善至最高 3,000 米；官方同时强调仍需研究确认改善是否由干冰造成。", "title": "印尼首次在南苏门答腊试验干冰驱霾"},
+    {"confidence": "high", "id": "china-platform-worker-draft-rules-human-review", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/east-asia/china-gig-workers-draft-rules-protection-6459661"}], "summary": "中国拟议平台用工规则要求连续工作四小时后休息、按月至少支付一次报酬、节假日提高费率，并要求停止派单或封号等决定经过人工复核；承包外包、众包骑手与处罚缺失仍使责任和执行边界不清。", "title": "中国平台用工草案把算法管理纳入人工复核与记录责任"}
+  ],
+  "generated_at": "2026-10-19T07:58:32+08:00",
+  "intelligence_themes": [
+    {
+      "change_state": "accelerating",
+      "change_summary_zh": "过去 7 个有效日，雾霾主题已从健康提示、交通中断推进到企业法定通知与 hazardous 级预案；今天西部 PSI 达 230、创今年全岛最高，商户开始报告 30% 至 80% 的营业损失，同时印尼把响应扩展到未经验证的干冰试验。独立的空气监测、商户经营反馈和上游干预共同表明影响正在扩大，而非转载数量增加。",
+      "confidence": "high",
+      "counter_evidence_zh": ["商户损失来自少量受访者，不能代表全新加坡零售和餐饮业。", "空气质量受风向、降雨和本地排放影响，西部高值未必持续或扩散。", "干冰作业期间能见度改善并不能证明因果，印尼官方也要求进一步研究。"],
+      "event_ids": ["singapore-haze-west-psi-230-business-losses", "indonesia-south-sumatra-dry-ice-haze-trial"],
+      "evidence": [{"event_id": "singapore-haze-west-psi-230-business-losses", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/haze-western-region-daily-routines-psi-businesses-6469406"}, {"event_id": "indonesia-south-sumatra-dry-ice-haze-trial", "source_name": "Agencies via CNA", "url": "https://www.channelnewsasia.com/asia/indonesia-drops-24-tonnes-dry-ice-over-south-sumatra-tackle-haze-6469171"}],
+      "id": "theme_e52a7d19c4b830f6",
+      "impact_chain": [{"affected_actors_zh": ["新加坡西部居民", "依赖客流的小贩与零售商", "户外工作者和儿童", "印尼消防与灾害管理机构"], "cause_zh": "跨境烟霾持续叠加不利气象条件，使新加坡西部 PSI 升至 very unhealthy", "confidence": "high", "effect_zh": "居民减少外出，商户客流与收入下降，政府和印尼方面被迫采用更强但尚未验证的干预", "evidence_event_ids": ["singapore-haze-west-psi-230-business-losses", "indonesia-south-sumatra-dry-ice-haze-trial"], "mechanism_zh": "细颗粒物通过风场输送并在局部累积；健康风险改变出行和消费行为，经营损失随户外暴露期延长，上游则尝试改变烟层滞留条件"}],
+      "lanes": ["Singapore/Asia", "Business", "Politics"],
+      "problem_signals": [{"evidence_event_ids": ["singapore-haze-west-psi-230-business-losses", "indonesia-south-sumatra-dry-ice-haze-trial"], "problem_zh": "雾霾应对缺少对局部暴露、商户损失与上游干预效果的统一可验证度量，导致补助、营业调整和技术部署难以按效果决策", "type": "operational", "who_has_it_zh": ["环境与灾害管理机构", "受影响商户和平台工作者", "学校与雇主"]}],
+      "reporting_date": "2026-10-19",
+      "score": 99,
+      "score_rationale_zh": "年度最高 PSI、可观察经营损失和新的上游干预构成相互独立的升级证据；损失代表性与干冰效果仍有限。",
+      "thesis_zh": "雾霾已经从公共卫生预警变成局部经营冲击：新加坡西部 PSI 达到今年最高的 230，客流型商户报告显著收入下降，而印尼开始试验干冰驱霾却尚不能证明有效。",
+      "title_zh": "雾霾成本从应急预案落到商户现金流，上游技术干预仍缺效果证据",
+      "uncertainties_zh": ["受访商户的基线、样本量和其他节庆或需求因素未被控制。", "干冰、风场和降雨各自对能见度改善的贡献未知。", "两项报道均由 CNA 汇集，虽然分别依据新加坡监测、商户采访和印尼官方数据，但缺少独立科研评估。"]
+    },
+    {
+      "change_state": "new",
+      "change_summary_zh": "过去 30 个有效日没有达到门槛的平台劳动算法监管主题；今天中国拟议规则首次把连续工作休息、费用计入、人工复核和工作记录访问组合为一套劳动控制框架。实质变化不是再次讨论骑手压力，而是将算法派单和封号决定明确连接到程序性责任。",
+      "confidence": "high",
+      "counter_evidence_zh": ["规则仍是草案，部分义务没有明确处罚，执行强度未知。", "众包骑手主动选择更灵活但保障更少的安排，统一规则可能降低其自主性。", "平台可通过承包商安排转移责任，人工复核本身也不保证决定公平。"],
+      "event_ids": ["china-platform-worker-draft-rules-human-review"],
+      "evidence": [{"event_id": "china-platform-worker-draft-rules-human-review", "source_name": "CNA", "url": "https://www.channelnewsasia.com/east-asia/china-gig-workers-draft-rules-protection-6459661"}],
+      "id": "theme_3b6d8f20a7c941e5",
+      "impact_chain": [{"affected_actors_zh": ["外卖骑手和网约车司机", "平台公司", "外包配送站", "劳动监管机构"], "cause_zh": "拟议规则限制连续工作并要求关键算法决定接受人工复核", "confidence": "high", "effect_zh": "平台必须保留可解释的工作与处罚记录，但成本和责任可能在平台、承包商与骑手之间重新分配", "evidence_event_ids": ["china-platform-worker-draft-rules-human-review"], "mechanism_zh": "休息、报酬与费用规则改变派单约束；人工复核和记录访问为封号、扣款与绩效争议提供程序性检查点"}],
+      "lanes": ["Business", "Politics", "AI/Technology", "Singapore/Asia"],
+      "problem_signals": [{"evidence_event_ids": ["china-platform-worker-draft-rules-human-review"], "problem_zh": "平台算法控制工作过程，但用工关系分散在承包商和众包模式中，导致谁对休息、扣款、封号和记录真实性负责仍不清楚", "type": "regulatory", "who_has_it_zh": ["平台企业", "承包商", "骑手与司机", "劳动执法机构"]}],
+      "reporting_date": "2026-10-19",
+      "score": 95,
+      "score_rationale_zh": "草案直接改变平台算法管理的程序要求，并由工人、研究者和规则文本提供机制证据；尚未生效且处罚边界不完整。",
+      "thesis_zh": "中国平台劳动监管正从结果要求转向算法过程：拟议规则不仅规定休息和报酬，还要求封号或停派等决定经过人工复核，但外包链条可能继续模糊责任。",
+      "title_zh": "平台劳动监管开始约束算法过程，但外包关系仍可能成为责任缺口",
+      "uncertainties_zh": ["草案最终文本、生效时间和具体处罚尚未确定。", "平台如何证明人工复核独立于原算法、监管者如何审计记录真实性未知。", "证据主要来自 CNA 对草案、骑手和学者的单一报道链，尚缺平台正式回应与执行数据。"]
+    }
+  ],
+  "opportunity_hypothesis": null,
+  "speech_text": "今天有两个主题达到门槛。新加坡西部 PSI 达到今年最高的 230，雾霾成本已经落到商户现金流，而印尼干冰试验仍缺效果证据。中国拟议平台用工规则开始要求算法封号和停派接受人工复核，但外包链条仍可能模糊责任。今天不提出未经验证的商业机会。",
+  "status": "partial"
+}
