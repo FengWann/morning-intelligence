@@ -1,0 +1,50 @@
+{
+  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-10-21.md",
+  "date": "2026-10-21",
+  "events": [
+    {"confidence": "high", "id": "singtel-mobile-outages-imda-fine-root-causes", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/singtel-fined-1-million-march-mobile-service-disruptions-6474736"}], "summary": "IMDA 因 Singtel 3 月三次移动网络中断罚款 100 万新元。首日九小时中断源于供应商维护后未重开冷却水手动阀且 Singtel 未主动监测；随后流量切换又与关闭的 packet optimiser 和软件缺陷叠加，约 72 万用户受影响。", "title": "Singtel 三次中断显示物理维护与网络切换风险未被统一验证"},
+    {"confidence": "high", "id": "singapore-hourly-pm25-outdoor-work-guidance", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/mom-guidelines-pm25-outdoor-work-6475416"}], "summary": "新加坡人力部新增以 1 小时 PM2.5 即时调整户外工作的指引，补充以 24 小时 PSI 规划次日工作的制度；very high 时应尽量减少所有户外工作，并为不可避免的工作提供呼吸防护和每小时室内休息。", "title": "新加坡把雾霾用工管理从次日规划细化到小时级调整"}
+  ],
+  "generated_at": "2026-10-21T08:00:28+08:00",
+  "intelligence_themes": [
+    {
+      "change_state": "new",
+      "change_summary_zh": "过去 30 个有效日没有达到门槛的新加坡电信韧性主题；今天 IMDA 公布的根因把同一组事故连接为两阶段失败：物理冷却维护失误先使设备过热，流量切换后又触发容量、配置与软件问题。实质变化是监管结论从‘发生中断’推进到可预防的跨层控制缺口，并伴随 100 万新元处罚。",
+      "confidence": "high",
+      "counter_evidence_zh": ["事故发生于 3 月，今天的新信息是调查结论和处罚，并非新的实时中断。", "Singtel 已修正冷却与交换机系统、测试流量切换，并向用户支付约 800 万新元补偿。", "单一运营商事故不能证明新加坡整体移动网络存在相同缺陷。"],
+      "event_ids": ["singtel-mobile-outages-imda-fine-root-causes"],
+      "evidence": [{"event_id": "singtel-mobile-outages-imda-fine-root-causes", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/singtel-fined-1-million-march-mobile-service-disruptions-6474736"}],
+      "id": "theme_4e8b2c71d9a630f5",
+      "impact_chain": [{"affected_actors_zh": ["Singtel 消费与企业用户", "电信网络运维团队", "设施维护供应商", "IMDA 与关键服务依赖方"], "cause_zh": "维护后手动阀未复位且缺少主动监测，导致交换局冷却失败", "confidence": "high", "effect_zh": "设备过热停机后，未经充分验证的流量切换又触发两晚间歇连接，扩大并延长用户影响", "evidence_event_ids": ["singtel-mobile-outages-imda-fine-root-causes"], "mechanism_zh": "物理设施故障迫使 5G 流量转移；备用交换局的额外负载与关闭的 packet optimiser、软件缺陷共同破坏吞吐和时延"}],
+      "lanes": ["Singapore/Asia", "Business", "AI/Technology"],
+      "problem_signals": [{"evidence_event_ids": ["singtel-mobile-outages-imda-fine-root-causes"], "problem_zh": "关键网络的韧性测试没有同时覆盖人工维护状态、冷却遥测、流量转移容量、配置开关和软件缺陷之间的组合故障", "type": "operational", "who_has_it_zh": ["电信运营商", "设施与网络供应商", "关键基础设施监管机构"]}],
+      "reporting_date": "2026-10-21",
+      "score": 99,
+      "score_rationale_zh": "72 万用户、九小时影响和监管根因提供高强度运营证据；事件已修复且只代表单一运营商。",
+      "thesis_zh": "Singtel 事故说明关键基础设施的 failover 不能只测网络软件：一个未复位的冷却阀触发设备停机，而备用路径又因容量、配置和软件缺陷连续失效，风险存在于物理维护与数字切换的接口。",
+      "title_zh": "Singtel 事故暴露跨层韧性缺口：冷却阀失误之后，备用网络也未通过真实负载考验",
+      "uncertainties_zh": ["IMDA 未披露具体交换局、软件缺陷类型和逐项控制测试结果。", "Singtel 所称 AI 辅助 failover 测试的范围、准确率和上线状态未知。", "证据来自 IMDA 调查并由 Singtel接受，但缺少独立技术审计报告。"]
+    },
+    {
+      "change_state": "continuing",
+      "change_summary_zh": "过去 7 个有效日，雾霾应对已从 PSI 预警、口罩和学校预案推进到企业追责及认证限制；今天用工侧首次明确区分 24 小时 PSI 的次日规划与 1 小时 PM2.5 的当日调整，并把不同读数对应到减工、停工、防护和室内休息。变化在于应急建议成为小时级运营规则，而不是更多雾霾报道。",
+      "confidence": "high",
+      "counter_evidence_zh": ["指引并非全面停工命令，执行仍由雇主基于工作性质和员工状况判断。", "超过 400 次检查中约四分之一现场不足，但政府未披露具体缺陷类型和整改结果。", "小时读数变化快，企业可能面临频繁调整与业务连续性的冲突。"],
+      "event_ids": ["singapore-hourly-pm25-outdoor-work-guidance"],
+      "evidence": [{"event_id": "singapore-hourly-pm25-outdoor-work-guidance", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/mom-guidelines-pm25-outdoor-work-6475416"}],
+      "id": "theme_e52a7d19c4b830f6",
+      "impact_chain": [{"affected_actors_zh": ["户外工作者与脆弱员工", "建筑、景观和配送雇主", "现场主管", "人力部执法人员"], "cause_zh": "小时级 PM2.5 可能在 24 小时 PSI 规划不变时快速恶化", "confidence": "high", "effect_zh": "雇主需要在班中动态降低劳动强度、轮岗、提供室内休息和呼吸防护，并保留业务连续性", "evidence_event_ids": ["singapore-hourly-pm25-outdoor-work-guidance"], "mechanism_zh": "24 小时 PSI 用于次日排程，1 小时 PM2.5 作为现场触发器，把实时暴露水平映射到分级控制措施"}],
+      "lanes": ["Singapore/Asia", "Business", "Politics"],
+      "problem_signals": [{"evidence_event_ids": ["singapore-hourly-pm25-outdoor-work-guidance"], "problem_zh": "雇主必须把快速变化的空气读数转成岗位、员工健康和设备风险的即时行动，同时证明已执行相应防护", "type": "operational", "who_has_it_zh": ["户外用工企业", "现场安全负责人", "平台和承包商", "劳动监管机构"]}],
+      "reporting_date": "2026-10-21",
+      "score": 96,
+      "score_rationale_zh": "新指引建立可执行的小时级触发机制，并回应现场不足；效果和遵守程度仍待检查数据验证。",
+      "thesis_zh": "新加坡雾霾用工管理已从‘明天是否适合户外工作’细化为‘这一小时如何调整任务’：1 小时 PM2.5 成为班中减工、防护和休息的触发器，暴露管理进入实时运营层。",
+      "title_zh": "雾霾用工规则进入小时级执行，实时读数开始直接改变户外任务",
+      "uncertainties_zh": ["不同岗位如何量化‘strenuous’以及何时恢复工作仍需雇主判断。", "平台工作者、外包人员和自雇者能否获得同等防护未知。", "现有检查数据没有按行业、缺陷或处罚结果拆分。"]
+    }
+  ],
+  "opportunity_hypothesis": null,
+  "speech_text": "今天有两个主题达到门槛。Singtel 三次中断暴露物理维护与数字流量切换之间的跨层韧性缺口。新加坡雾霾用工规则则进入小时级执行，实时 PM2.5 开始直接触发减工、防护和室内休息。今天不提出未经验证的商业机会。",
+  "status": "partial"
+}
