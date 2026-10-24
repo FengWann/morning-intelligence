@@ -1,0 +1,54 @@
+{
+  "brief_url": "https://fengwann.github.io/morning-intelligence/briefs/2026-10-24.md",
+  "date": "2026-10-24",
+  "events": [
+    {"confidence": "high", "id": "singapore-haze-specialist-crossborder-panel", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/singapore-haze-specialist-panel-investigation-minlaw-6486146"}], "summary": "新加坡律政部成立跨境专业调查小组，穿透审查本地与外国企业的公司关系、供应链及集团结构；被识别企业须让法律、审计和调查专家充分查阅资料并提交审计结果。", "title": "新加坡以跨境专业小组调查雾霾责任链"},
+    {"confidence": "high", "id": "nea-first-notices-ten-singapore-haze-firms", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/nea-haze-notices-companies-transboundary-pollution-6486086"}], "summary": "NEA 首次依据《跨境烟霾污染法》向 10 家新加坡注册的棕榈油和林业企业发出通知，要求披露与印尼特许经营地的公司联系以及防火灭火措施。", "title": "NEA 首次向十家新加坡企业发出雾霾调查通知"},
+    {"confidence": "medium", "id": "migrant-workers-two-month-unpaid-process-sector", "sources": [{"name": "CNA", "url": "https://www.channelnewsasia.com/singapore/migrant-workers-unpaid-ntuc-assistance-6486371"}], "summary": "据 NTUC 与 MWC，近 240 名流程工业外籍工人声称被两家公司拖欠最多两个月工资；援助机构已提供餐食、申索协助、工作配对和临时经济援助，MOM 的正式回应尚未见报道。", "title": "近 240 名流程工业外籍工人声称被拖欠工资"}
+  ],
+  "generated_at": "2026-10-24T08:01:34+08:00",
+  "intelligence_themes": [
+    {
+      "change_state": "accelerating",
+      "change_summary_zh": "过去 7 个有效日，雾霾追责从向印尼企业索取资料、绿色认证和融资声誉压力，推进到首次向 10 家新加坡注册企业发出法定通知，并成立可穿透审查公司结构与供应链的跨境专业小组。加速判断来自两项新的执法机制，而不是报道数量。",
+      "confidence": "high",
+      "counter_evidence_zh": ["调查通知和专业审计并不等于企业已被认定违法或应承担责任。", "跨境取证仍受外国法律、资料可得性和实际执行限制。", "报道发表时相关企业尚未公开回应，调查结果和后续行动未知。"],
+      "event_ids": ["singapore-haze-specialist-crossborder-panel", "nea-first-notices-ten-singapore-haze-firms"],
+      "evidence": [
+        {"event_id": "singapore-haze-specialist-crossborder-panel", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/singapore-haze-specialist-panel-investigation-minlaw-6486146"},
+        {"event_id": "nea-first-notices-ten-singapore-haze-firms", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/nea-haze-notices-companies-transboundary-pollution-6486086"}
+      ],
+      "id": "theme_e52a7d19c4b830f6",
+      "impact_chain": [{"affected_actors_zh": ["在新加坡注册的棕榈油与林业集团", "印尼特许经营地及其关联企业", "审计、法律与调查专业机构", "NEA、MAS 与总检察署"], "cause_zh": "政府首次向本地企业发出法定资料通知，并以跨境专家组核查所有权、控制关系和供应链", "confidence": "high", "effect_zh": "企业须把过去分散于集团、供应商和境外经营地的证据交由专业人员审查，调查结果可交监管与执法机构跟进", "evidence_event_ids": ["singapore-haze-specialist-crossborder-panel", "nea-first-notices-ten-singapore-haze-firms"], "mechanism_zh": "通过公司关系、特许经营地、供应链和防火记录建立火点与新加坡实体之间的控制或默许链条，把环境归因转化为可审计的企业证据链"}],
+      "lanes": ["Singapore/Asia", "Politics", "Business"],
+      "problem_signals": [{"evidence_event_ids": ["singapore-haze-specialist-crossborder-panel", "nea-first-notices-ten-singapore-haze-firms"], "problem_zh": "跨司法辖区的所有权、经营控制、供应商关系和防火响应资料分散，监管机构难以把火点归因与具体企业责任可靠连接", "type": "regulatory", "who_has_it_zh": ["环境执法机构", "跨国农业与林业集团", "审计和法律团队", "金融监管机构"]}],
+      "reporting_date": "2026-10-24",
+      "score": 99,
+      "score_rationale_zh": "首次针对本地企业的法定通知与跨境专业审计同时出现，构成明确制度升级；但仍处调查期且两项报道来自同一媒体，责任结论尚未形成。",
+      "thesis_zh": "雾霾追责已从点名境外火点升级为穿透公司结构的证据生产：新加坡首次要求本地企业披露与印尼特许经营地的联系，并用法律、审计和调查专家核查控制关系与供应链。",
+      "title_zh": "雾霾追责从点名企业升级为穿透公司结构的强制审计",
+      "uncertainties_zh": ["专业小组能否取得境外完整资料以及外国机构是否配合未知。", "十家本地企业与具体火点的法律关联尚未证实。", "两项相互关联的进展均由 CNA 报道，缺少独立媒体交叉来源。"]
+    },
+    {
+      "change_state": "new",
+      "change_summary_zh": "过去 30 个有效日没有达到门槛的外籍工人欠薪主题；今天首次出现近 240 人、最多两个月欠薪并需要餐食和经济援助的集中案例。它是新的劳动与运营信号，但不能据此推断整个流程工业普遍欠薪。",
+      "confidence": "medium",
+      "counter_evidence_zh": ["MWC、ACE 和工会已迅速组织餐食、申索、工作配对及经济援助。", "欠薪为工人与工会方面的陈述，尚无雇主回应或正式裁定。", "案例涉及两家公司，不能外推为整个流程工业的系统性问题。"],
+      "event_ids": ["migrant-workers-two-month-unpaid-process-sector"],
+      "evidence": [{"event_id": "migrant-workers-two-month-unpaid-process-sector", "source_name": "CNA", "url": "https://www.channelnewsasia.com/singapore/migrant-workers-unpaid-ntuc-assistance-6486371"}],
+      "id": "theme_73a8d1e5c9f240b6",
+      "impact_chain": [{"affected_actors_zh": ["Process Maintenance Solutions 与 Jurong Technical & Construction 的外籍工人", "工人家属", "MWC、MOM ACE 与工会", "流程工业承包链上的项目方"], "cause_zh": "据工人与 NTUC 方面陈述，两家公司最多两个月未支付工资", "confidence": "medium", "effect_zh": "部分工人需要日常餐食和紧急经济支持，并进入工资申索及重新就业流程", "evidence_event_ids": ["migrant-workers-two-month-unpaid-process-sector"], "mechanism_zh": "工资中断直接削弱依赖月薪汇款的工人家庭现金流；若风险只在连续欠薪后才集中暴露，援助机构只能在生活危机形成后介入"}],
+      "lanes": ["Singapore/Asia", "Business"],
+      "problem_signals": [{"evidence_event_ids": ["migrant-workers-two-month-unpaid-process-sector"], "problem_zh": "承包企业的工资与现金流风险可能直到工人连续欠薪并需要生活援助后才集中暴露，现有证据不足以确认更早预警环节是否存在或失效", "type": "labor", "who_has_it_zh": ["外籍工人", "流程工业承包商与项目方", "工会及劳动援助机构", "劳动监管机构"]}],
+      "reporting_date": "2026-10-24",
+      "score": 91,
+      "score_rationale_zh": "受影响人数、欠薪时长和实际援助需求具体，显示高严重度；但目前仅有单一媒体依据工会和工人陈述，雇主与监管结论缺失。",
+      "thesis_zh": "近 240 名外籍工人的工资风险是在最长两个月欠薪并需要餐食援助后集中显现；这暴露出提前识别承包商工资支付风险的必要性，但现有证据还不能断言预警系统已经失效。",
+      "title_zh": "欠薪问题在工人需要生活援助后才集中显现，工资风险预警仍需核查",
+      "uncertainties_zh": ["两家公司的欠薪原因、财务状况和雇主回应未知。", "MOM 是否已调查以及工资申索最终能否全额支付未知。", "这是单一来源报道，关键数字主要来自 NTUC 和工人陈述。"]
+    }
+  ],
+  "opportunity_hypothesis": null,
+  "speech_text": "今天有两个主题达到门槛。第一，雾霾追责首次延伸到新加坡注册企业，并由跨境专业小组穿透审查公司结构与供应链。第二，近二百四十名流程工业外籍工人的欠薪案例显示，工资风险可能在生活危机形成后才集中暴露。今天证据不足，不提出未经验证的商业机会。",
+  "status": "partial"
+}
