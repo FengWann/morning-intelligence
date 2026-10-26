@@ -1,0 +1,66 @@
+{
+  "brief_url":"https://fengwann.github.io/morning-intelligence/briefs/2026-10-26.md",
+  "date":"2026-10-26",
+  "events":[
+    {"confidence":"high","id":"indonesia-18-day-singapore-gas-export-cut","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/electricity-prices-indonesia-gas-supply-cut-tan-see-leng-6490121"},{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/indonesia-gas-exports-singapore-gas-contracts-pm-wong-pap-convention-6489956"}],"summary":"印尼为满足国内发电需求，自 10 月 24 日起把对新加坡天然气出口削减每日 3,100 万标准立方英尺，为期 18 天，约占新加坡每日天然气需求不足 2%；新加坡表示供应充足，并将审视商业合同救济。","title":"印尼实际削减对新加坡天然气出口，新加坡启动多层供应防线"},
+    {"confidence":"high","id":"thailand-eec-data-centre-water-conflict","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/asia/thailand-data-centres-water-elephants-6465091"}],"summary":"泰国 EEC 有三座数据中心运营或扩建、九座在建、29 个项目申请投资优惠；区域工业用水预计 2024 至 2037 年增 58%，拟建 9,950 万立方米水库却将淹没保护林与村庄。","title":"泰国数据中心扩张把算力竞争转化为水资源与土地冲突"},
+    {"confidence":"medium","id":"singapore-haze-indoor-air-and-mask-tests","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/cna-insider/insider/haze-indoor-air-expired-n95-masks-air-purifiers-protect-6488636"}],"summary":"截至 10 月 24 日，新加坡已连续 20 天空气不健康；CNA 单户测试显示关窗一小时后室内 PM2.5 高于室外，专家强调建筑渗漏、室内污染源、通风和过滤条件会改变实际暴露。","title":"持续雾霾暴露显示关窗不等于室内空气安全"}
+  ],
+  "generated_at":"2026-10-26T08:01:53+08:00",
+  "intelligence_themes":[
+    {
+      "change_state":"turning",
+      "change_summary_zh":"过去 7 个有效日，印尼对邻国能源出口的强硬表态仍被分析为国内政治姿态；今天风险首次转为持续 18 天的实际削减。与此同时，削减量不足新加坡日需求 2%，LNG、柴油储备和多来源采购使事件从潜在供应冲击转为对合同执行与韧性体系的实测。",
+      "confidence":"high",
+      "counter_evidence_zh":["削减量不足每日天然气需求的 2%，政府预计短期电价不会显著受影响。","EMA 表示过往更大规模削减也能无事故管理，不能把本次事件描述为能源危机。","全球天然气指数对本地价格的影响可能大于这次短期供应变化。"],
+      "event_ids":["indonesia-18-day-singapore-gas-export-cut"],
+      "evidence":[{"event_id":"indonesia-18-day-singapore-gas-export-cut","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/electricity-prices-indonesia-gas-supply-cut-tan-see-leng-6490121"},{"event_id":"indonesia-18-day-singapore-gas-export-cut","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/indonesia-gas-exports-singapore-gas-contracts-pm-wong-pap-convention-6489956"}],
+      "id":"theme_8d2f5a1c7e9b4036",
+      "impact_chain":[{"affected_actors_zh":["Singapore GasCo 与 GSPL","新加坡发电公司和电力用户","印尼上游气体供应商与监管机构","能源交易和合同团队"],"cause_zh":"印尼为国内发电需求削减已签商业合同下的管道天然气出口，为期 18 天","confidence":"high","effect_zh":"新加坡须调度替代气源和备用燃料，同时由进口商评估合同权利；若韧性措施有效，终端供电与短期价格可保持稳定","evidence_event_ids":["indonesia-18-day-singapore-gas-export-cut"],"mechanism_zh":"LNG 进口设施、气源多元化和强制柴油储备吸收小规模管道缺口，商业合同则承担跨境供应责任和后续救济"}],
+      "lanes":["Singapore/Asia","Politics","Business"],
+      "problem_signals":[{"evidence_event_ids":["indonesia-18-day-singapore-gas-export-cut"],"problem_zh":"能源进口商需要同时判断实时物理缺口、备用燃料成本和跨境合同救济，避免把政治表态、合同争议与实际供应风险混为一谈","type":"operational","who_has_it_zh":["能源进口商","发电企业","能源监管机构","大型用电企业"]}],
+      "reporting_date":"2026-10-26","score":98,
+      "score_rationale_zh":"实际削减量、期限、需求占比和应对层次均有明确数字，且印尼监管方与新加坡政府均被引述；报道仍集中于 CNA，合同条款和实际调度数据未公开。",
+      "thesis_zh":"印尼的能源民族主义已从言辞变成实际出口削减，但不足 2% 的短期缺口同时证明，新加坡真正接受检验的是 LNG、柴油储备和商业合同组成的多层韧性，而不是即时缺电。",
+      "title_zh":"印尼天然气削减从政治信号变成合同事件，新加坡能源防线开始接受实测",
+      "uncertainties_zh":["具体合同义务、是否构成违约及 GSPL 将采取何种救济未知。","18 天后是否完全恢复、印尼国内需求是否继续挤压出口未知。","单一媒体警告：两篇报道均来自 CNA，虽分别引述印尼监管方、EMA 和新加坡领导人，仍缺少合同方原始文件。"]
+    },
+    {
+      "change_state":"accelerating",
+      "change_summary_zh":"过去 30 个有效日，区域数据中心约束已从新加坡许可和能效要求扩展到马来西亚电网容量；今天泰国 EEC 又出现水资源和保护土地的独立约束链。加速判断来自约束跨越三个国家、从电力延伸到水和土地，而不是同一项目报道增加。",
+      "confidence":"high",
+      "counter_evidence_zh":["拟建 Wang Tanot 水库早在 1990 年代已构思，不能把全部水资源压力归因于近期数据中心。","榴莲种植、家庭和传统工业也在增加用水，算力只是多个需求来源之一。","水库尚须取得国家公园委员会许可，更小水库、再生水和效率方案仍可能改变项目。"],
+      "event_ids":["thailand-eec-data-centre-water-conflict"],
+      "evidence":[{"event_id":"thailand-eec-data-centre-water-conflict","source_name":"CNA","url":"https://www.channelnewsasia.com/asia/thailand-data-centres-water-elephants-6465091"}],
+      "id":"theme_a6e3c9f1d7b24058",
+      "impact_chain":[{"affected_actors_zh":["泰国 EEC 数据中心和工业园开发商","当地农户、334 户村民与供水机构","保护区与野生象栖息地","泰国投资和环境监管机构"],"cause_zh":"数据中心和其他工业项目快速进入 EEC，叠加农业与居民需求，使区域水需求在现有系统上继续增长","confidence":"medium","effect_zh":"政府面对建库淹没保护林和村庄、扩大再生水、提高效率或限制项目选址的取舍，数据中心许可将更依赖可证明的水资源方案","evidence_event_ids":["thailand-eec-data-centre-water-conflict"],"mechanism_zh":"高密度冷却负荷把长期算力投资转化为持续取水需求；若新增供应依赖水库，数字基础设施的成本会外溢到迁移、生态和农业分配"}],
+      "lanes":["Singapore/Asia","AI/Technology","Business"],
+      "problem_signals":[{"evidence_event_ids":["thailand-eec-data-centre-water-conflict"],"problem_zh":"数据中心审批、供水扩建和社区补偿使用不同时间表与数据，难以在项目落地前证明枯水年仍能公平分配水资源","type":"cost","who_has_it_zh":["EEC 规划和水务机构","数据中心开发商","农民与受迁社区","环境监管机构"]}],
+      "reporting_date":"2026-10-26","score":97,
+      "score_rationale_zh":"项目数量、用水增幅、缺口预测和水库规模共同显示实质资源约束，并扩展既有区域趋势；单一深度报道中的多方估计仍需官方项目数据交叉验证。",
+      "thesis_zh":"东南亚算力竞争正从电力约束扩展到水和土地：泰国 EEC 的数据中心管线已大到参与推动供水基础设施选择，而新增水库的代价可能由保护林、野生动物和村庄承担。",
+      "title_zh":"区域算力瓶颈从电网扩展到水资源，泰国数据中心扩张开始产生土地与社区成本",
+      "uncertainties_zh":["29 个申请项目中最终建设和实际取水规模未知。","数据中心在 EEC 2037 年总需求增量中的精确占比未披露。","单一来源警告：结论基于 CNA 深度报道汇集的政府、World Bank、企业和社区资料，尚非独立多媒体交叉来源。"]
+    },
+    {
+      "change_state":"continuing",
+      "change_summary_zh":"过去 7 个有效日，雾霾主题已覆盖户外工作小时级规则、食品供应和企业追责；今天新增的是连续 20 天不健康暴露及室内保护失效的实测信号。变化不在空气质量再次不健康，而在‘留在室内’需要进一步拆解为渗漏、室内污染源、过滤和通风管理。",
+      "confidence":"medium",
+      "counter_evidence_zh":["室内高于室外的结果只来自一套住宅和一个短时测试，不能代表全岛住宅。","关窗通常仍可降低外部烟霾进入，室内读数也可能受烹饪、香烛或既有颗粒影响。","部分过期 N95 在实验中仍有过滤能力，但密合度和储存状况决定实际保护，不能据此普遍延长使用。"],
+      "event_ids":["singapore-haze-indoor-air-and-mask-tests"],
+      "evidence":[{"event_id":"singapore-haze-indoor-air-and-mask-tests","source_name":"CNA","url":"https://www.channelnewsasia.com/cna-insider/insider/haze-indoor-air-expired-n95-masks-air-purifiers-protect-6488636"}],
+      "id":"theme_e52a7d19c4b830f6",
+      "impact_chain":[{"affected_actors_zh":["无中央过滤系统的家庭","年长者、儿童和心肺疾病患者","住宅与设施管理者","口罩和空气净化产品用户"],"cause_zh":"烟霾连续多日使颗粒经门窗缝隙进入室内，室内活动又可能产生额外颗粒","confidence":"medium","effect_zh":"单纯关窗可能无法把暴露降到安全水平，家庭需要结合室内监测、污染源控制、过滤和合适通风时机","evidence_event_ids":["singapore-haze-indoor-air-and-mask-tests"],"mechanism_zh":"室内空气是外部渗透、建筑气密性、室内排放和过滤效率的共同结果；24 小时 PSI 或室外单点值不能直接代表个人实际剂量"}],
+      "lanes":["Singapore/Asia","Business"],
+      "problem_signals":[{"evidence_event_ids":["singapore-haze-indoor-air-and-mask-tests"],"problem_zh":"家庭缺少把室外读数、室内污染源、建筑渗漏和净化设备状态组合成可靠行动建议的方法","type":"consumer","who_has_it_zh":["敏感人群家庭","住宅和养老设施","室内空气质量服务商","公共卫生传播机构"]}],
+      "reporting_date":"2026-10-26","score":91,
+      "score_rationale_zh":"20 天持续暴露和室内外对照提出新的防护机制问题，但测试样本极小，结论主要用于提醒而非量化全岛风险。",
+      "thesis_zh":"持续雾霾让‘留在室内’从简单建议变成建筑与行为问题：颗粒可能经渗漏进入，室内污染源又会叠加，关窗本身并不能证明个人暴露已经降低。",
+      "title_zh":"持续雾霾暴露进入室内，关窗不再是可验证的完整防护方案",
+      "uncertainties_zh":["不同住宅类型、楼层和空调系统的室内外比例没有代表性数据。","连续 20 天的健康后果和各群体累计剂量尚未量化。","单一来源警告：关键室内对照来自 CNA 节目测试，尚缺官方大样本调查。"]
+    }
+  ],
+  "opportunity_hypothesis":null,
+  "speech_text":"今天有三个主题达到门槛。印尼天然气削减让新加坡能源韧性和合同机制进入实际测试；泰国数据中心扩张把区域算力瓶颈从电力推进到水和土地；持续雾霾则显示关窗并不等于室内空气安全。今天不提出未经验证的商业机会。",
+  "status":"partial"
+}
