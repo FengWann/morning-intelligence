@@ -1,0 +1,69 @@
+{
+  "brief_url":"https://fengwann.github.io/morning-intelligence/briefs/2026-10-28.md",
+  "date":"2026-10-28",
+  "events":[
+    {"confidence":"medium","id":"singapore-ai-supply-chain-transformation-initiative","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/watch/new-ai-initiative-aims-drive-transformation-across-supply-chains-6496976"}],"summary":"新加坡宣布一项以行业龙头为起点、沿供应链帮助不同规模企业采用 AI 的转型计划；公开报道尚未披露参与企业、资金、治理要求和成果指标。","title":"新加坡尝试以行业龙头带动供应链 AI 转型"},
+    {"confidence":"high","id":"singapore-germany-industrial-ai-workplan","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/singapore-germany-ai-cooperation-lawrence-wong-friedrich-merz-6493021"}],"summary":"新加坡与德国更新五支柱合作计划，把工业 AI、先进制造、半导体、绿色技术与联合研发列为重点，希望结合德国 Mittelstand 制造能力与新加坡数字化及区域连接。","title":"新德合作把 AI 重心推进到制造、能源和供应链的物理运营"},
+    {"confidence":"medium","id":"singapore-marvel-ai-materials-accelerator","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/watch/s150m-initiative-speed-up-materials-discovery-in-ai-powered-lab-6497021"}],"summary":"新加坡向 MARVEL AI accelerator 投入 1.5 亿新元，用 AI 驱动平台缩短先进材料发现周期；公开短讯未披露基准周期、实验验证流程和产业采用承诺。","title":"新加坡投入一亿五千万新元建设 AI 材料发现平台"},
+    {"confidence":"high","id":"asean-labour-statistics-office-singapore","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/asean-labour-statistics-jobs-skills-data-ai-exposure-green-transition-platform-work-6493506"}],"summary":"新加坡将承办 ASEAN Labour Statistics Office 并担任网络召集方至 2030 年，建立知识门户与共同方法，追踪 AI、平台工作和绿色转型；报告称 ASEAN 22.3% 就业具有绿色潜力，但实际绿色就业不足 6%。","title":"东盟建立跨国劳动力数据网络追踪 AI、平台工和绿色岗位"},
+    {"confidence":"high","id":"singapore-indonesia-haze-joint-taskforce","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/singapore-indonesia-haze-taskforce-hotline-6495736"}],"summary":"新加坡与印尼同意成立联合专责小组，连接公司资料、金融情报、跨境取证及可能的资产追回，并建立部长和高级官员热线处理分歧。","title":"新印成立雾霾联合专责小组，追责机制延伸到资金链与资产追回"},
+    {"confidence":"high","id":"singapore-haze-law-enforcement-gap-review","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/transboundary-haze-law-amendments-enforcement-gaps-grace-fu-6495226"}],"summary":"新加坡表示将检讨《跨境烟霾污染法》及其他法律，针对境外送达、企业拒绝合作、跨境证据核验和公司结构追踪等执行缺口，必要时修法或制定新法。","title":"新加坡把跨境取证失败点转化为烟霾法律修订议程"}
+  ],
+  "generated_at":"2026-10-28T07:58:18+08:00",
+  "intelligence_themes":[
+    {
+      "change_state":"accelerating",
+      "change_summary_zh":"过去 30 个有效日，新加坡 AI 主题从企业采用资金、制造业支持和岗位变化逐步推进；今天新增三个执行层：由龙头沿供应链扩散、与德国共同部署 industrial AI，以及用 1.5 亿新元平台把 AI 接入材料实验。加速判断来自应用范围从企业软件扩展到跨国制造网络和物理研发流程，不是报道数量。",
+      "confidence":"medium",
+      "counter_evidence_zh":["供应链计划的参与企业、资金和成果指标尚未公开，不能确认 SME 会获得实际部署能力。","新德五支柱计划主要是政府合作意向，未公布工业 AI 合同、试点或生产率结果。","MARVEL 的资金和平台目标明确，但公开短讯没有材料发现周期基准、实验复现率和产业采用承诺。"],
+      "event_ids":["singapore-ai-supply-chain-transformation-initiative","singapore-germany-industrial-ai-workplan","singapore-marvel-ai-materials-accelerator"],
+      "evidence":[{"event_id":"singapore-ai-supply-chain-transformation-initiative","source_name":"CNA","url":"https://www.channelnewsasia.com/watch/new-ai-initiative-aims-drive-transformation-across-supply-chains-6496976"},{"event_id":"singapore-germany-industrial-ai-workplan","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/singapore-germany-ai-cooperation-lawrence-wong-friedrich-merz-6493021"},{"event_id":"singapore-marvel-ai-materials-accelerator","source_name":"CNA","url":"https://www.channelnewsasia.com/watch/s150m-initiative-speed-up-materials-discovery-in-ai-powered-lab-6497021"}],
+      "id":"theme_2c8f14a6d9e730b5",
+      "impact_chain":[{"affected_actors_zh":["制造业龙头与供应商 SME","德国 Mittelstand 与新加坡企业","材料科学家、实验室和产业研发团队","经济发展、培训和 AI 治理机构"],"cause_zh":"政府将 AI 采用从单个企业补贴推进到供应链协作、跨国工业合作和自动化材料实验平台","confidence":"medium","effect_zh":"若龙头能共享数据标准、用例和采购需求，较小供应商可围绕真实生产流程采用 AI；材料研发则可能把计算筛选与实验验证连接起来","evidence_event_ids":["singapore-ai-supply-chain-transformation-initiative","singapore-germany-industrial-ai-workplan","singapore-marvel-ai-materials-accelerator"],"mechanism_zh":"工业 AI 的价值依赖机器、质量、能源和供应链数据跨企业流动；龙头提供需求与标准，国际伙伴提供制造知识，AI 实验平台把模型候选转成可测材料"}],
+      "lanes":["AI/Technology","Business","Singapore/Asia"],
+      "problem_signals":[{"evidence_event_ids":["singapore-ai-supply-chain-transformation-initiative","singapore-germany-industrial-ai-workplan","singapore-marvel-ai-materials-accelerator"],"problem_zh":"供应链企业的数据格式、设备接口、知识产权和成果指标不一致，使成功的单厂 AI 用例难以跨公司复制，并可能把成本与风险转嫁给较小供应商","type":"operational","who_has_it_zh":["制造业龙头和供应商","工业 AI 产品团队","数据与知识产权负责人","产业转型机构"]}],
+      "reporting_date":"2026-10-28","score":97,
+      "score_rationale_zh":"资金、双边合作和供应链扩散形成三个互补执行信号，符合用户 AI 商业关注；两项证据仅为短视频摘要，缺少合同、基准和结果，故置信度降为中。",
+      "thesis_zh":"新加坡的 AI 产业政策正在从‘帮助单个企业采用工具’转向‘重构整条工业价值链’：龙头带动供应商、新德合作补充制造能力、材料平台把模型直接接入实验流程。",
+      "title_zh":"AI 采用从单点工具转向工业网络，新加坡开始同时改造供应链协作与材料研发",
+      "uncertainties_zh":["供应链计划的资格、责任分配、数据共享规则和 SME 成本未知。","新德合作能否产生可复制项目、MARVEL 能否缩短真实上市周期尚无结果。","三项证据均由 CNA 报道，其中两项只有视频摘要，尚缺原始计划文件和企业独立确认。"]
+    },
+    {
+      "change_state":"new",
+      "change_summary_zh":"过去 30 个有效日的劳动力主题主要是新加坡国内的岗位、实习和年龄政策；今天首次建立由新加坡承办的 ASEAN 统计办公室与知识门户，试图用共同方法跨国测量 AI 暴露、平台工作和绿色岗位。变化是政策观察单位从单国项目扩展为区域可比数据基础设施。",
+      "confidence":"high",
+      "counter_evidence_zh":["新办公室和门户刚启动，成员国是否持续提交可比、及时和足够细的数据尚未验证。","22.3% 的绿色潜力是可经培训和设备转绿的任务估计，不等于现有岗位或确定需求。","各国对平台工、AI 暴露和绿色就业的定义及统计能力不同，统一指标可能掩盖本地差异。"],
+      "event_ids":["asean-labour-statistics-office-singapore"],
+      "evidence":[{"event_id":"asean-labour-statistics-office-singapore","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/asean-labour-statistics-jobs-skills-data-ai-exposure-green-transition-platform-work-6493506"}],
+      "id":"theme_31e7a9c5d2f840b6",
+      "impact_chain":[{"affected_actors_zh":["ASEAN 劳工和统计部门","平台工作者与受 AI 影响员工","培训机构和雇主","绿色产业投资者与政策制定者"],"cause_zh":"AI、平台经济和绿色转型跨越国界，但成员国的岗位定义、调查方法和技能数据难比较","confidence":"high","effect_zh":"共同办公室和门户可较早识别区域岗位及技能变化，并让培训与保护政策基于可比证据；若数据质量不足，也可能形成错误的区域平均判断","evidence_event_ids":["asean-labour-statistics-office-singapore"],"mechanism_zh":"通过共享研究、方法和经验，把分散国家调查映射到共同分类，再观察岗位任务、技能需求和就业质量的跨国变化"}],
+      "lanes":["Singapore/Asia","Business","AI/Technology"],
+      "problem_signals":[{"evidence_event_ids":["asean-labour-statistics-office-singapore"],"problem_zh":"成员国缺少及时、可比且细到任务层的劳动力数据，难以区分 AI 替代、平台化和绿色转型造成的真实技能缺口","type":"labor","who_has_it_zh":["ASEAN 劳工部门","培训与教育机构","跨国雇主","工会和平台工作者组织"]}],
+      "reporting_date":"2026-10-28","score":95,
+      "score_rationale_zh":"办公室、召集期限、门户和首份绿色岗位数据构成明确区域制度建设；单一来源且尚无数据交换成果。",
+      "thesis_zh":"东盟正把‘AI 会改变工作’从口号转化为区域统计能力：新加坡承办的新办公室将尝试统一岗位和技能数据，但真正难点是让十多个不同劳动力市场持续提供可比信息。",
+      "title_zh":"东盟为 AI 与绿色转型建立共同劳动力仪表盘，瓶颈从缺政策转为缺可比数据",
+      "uncertainties_zh":["办公室人员、预算、数据更新频率和成员国提交义务未披露。","数据能否覆盖非正规就业、移工和平台工作者未知。","单一来源警告：信息来自 MOM 与 ASEAN 发布并由 CNA 报道，门户尚无可评估历史数据。"]
+    },
+    {
+      "change_state":"turning",
+      "change_summary_zh":"过去 7 个有效日，雾霾追责从印尼企业通知、绿色认证限制推进到新加坡本地企业法定披露和专业审计；今天两国同意用联合专责小组共享公司资料、金融情报和跨境证据，同时新加坡把境外送达和拒绝合作列为修法对象。方向由各自执法转向双边协同并修补法律接口。",
+      "confidence":"high",
+      "counter_evidence_zh":["联合专责小组尚未公布成员、权限、时间表或首批案件，成立本身不等于取得证据或追回资产。","新加坡表示可能修法，但未提出具体条文；境外执行仍取决于印尼合作和本地法律程序。","空气质量改善主要来自风向和降雨，不能视为追责机制已经减少火灾。"],
+      "event_ids":["singapore-indonesia-haze-joint-taskforce","singapore-haze-law-enforcement-gap-review"],
+      "evidence":[{"event_id":"singapore-indonesia-haze-joint-taskforce","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/singapore-indonesia-haze-taskforce-hotline-6495736"},{"event_id":"singapore-haze-law-enforcement-gap-review","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/transboundary-haze-law-amendments-enforcement-gaps-grace-fu-6495226"}],
+      "id":"theme_e52a7d19c4b830f6",
+      "impact_chain":[{"affected_actors_zh":["新加坡与印尼环境、执法和金融情报机构","跨境棕榈油、林业及关联公司","银行、投资者和认证机构","受火灾和雾霾影响的社区"],"cause_zh":"单国法律难以送达境外企业、核验土地与公司关系，企业可通过拒绝合作或留在境外阻断调查","confidence":"high","effect_zh":"联合小组可连接两国公司、资金和土地证据，新加坡修法则可能提高拒绝合作的成本；能否形成案件仍取决于实际权限和证据标准","evidence_event_ids":["singapore-indonesia-haze-joint-taskforce","singapore-haze-law-enforcement-gap-review"],"mechanism_zh":"公司资料和卫星火点用于建立经营控制，金融情报追踪获利与资产，跨境取证补足单国调查边界，热线降低政治分歧阻断合作的风险"}],
+      "lanes":["Singapore/Asia","Politics","Business"],
+      "problem_signals":[{"evidence_event_ids":["singapore-indonesia-haze-joint-taskforce","singapore-haze-law-enforcement-gap-review"],"problem_zh":"跨境环境案件的土地控制、公司关系、资金流和现场防火证据分属不同司法辖区，单国通知无法保证送达、核验或执行","type":"regulatory","who_has_it_zh":["环境和执法机构","金融情报单位","跨国供应链合规团队","检察与法律专业机构"]}],
+      "reporting_date":"2026-10-28","score":99,
+      "score_rationale_zh":"双边联合机制和明确执法缺口形成互补制度变化，较昨日单边审计更进一步；尚无具体案件结果，且两篇均为 CNA 报道。",
+      "thesis_zh":"雾霾追责的关键接口正在从企业自报升级为两国共同取证：新加坡与印尼拟把公司资料、金融情报、资产追回和法律修订连接起来，目标是堵住企业以跨境结构和拒绝合作拖延调查的路径。",
+      "title_zh":"雾霾追责从单边通知转向双边证据链，新印开始把公司、资金与资产追回连接起来",
+      "uncertainties_zh":["联合小组的法定权限、证据共享限制和资产追回程序未知。","修法能否对无新加坡人员或资产的境外公司有效尚未说明。","政治与地缘单一媒体警告：协议内容由两国外长公开发布并经 CNA 报道，尚无联合任务书或独立法律分析。"]
+    }
+  ],
+  "opportunity_hypothesis":null,
+  "speech_text":"今天有三个主题达到门槛。新加坡 AI 政策从单个企业工具采用转向工业供应链与材料实验网络；东盟建立共同劳动力统计能力追踪 AI 和绿色转型；新印雾霾追责则从单边通知升级为公司、资金和资产追回的双边证据链。今天不提出未经验证的商业机会。",
+  "status":"partial"
+}
