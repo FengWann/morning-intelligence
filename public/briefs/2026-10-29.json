@@ -1,0 +1,67 @@
+{
+  "brief_url":"https://fengwann.github.io/morning-intelligence/briefs/2026-10-29.md",
+  "date":"2026-10-29",
+  "events":[
+    {"confidence":"high","id":"marvel-ai-materials-commercialisation-gap","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/ai-lab-breakthroughs-new-businesses-innovation-singapore-6499511"}],"summary":"A*STAR 的 MARVEL-AI 获首期 1.5 亿新元，将 AI 模型与自动化实验室结合；研究人员称部分材料筛选可提速逾 10 倍，但从克级样品放大到吨级生产仍受传热、传质、验证和市场采用限制。","title":"MARVEL-AI 将材料发现提速，但产业化瓶颈转向放大生产与客户验证"},
+    {"confidence":"high","id":"singapore-haze-mandatory-independent-assessment-amendment","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/transboundary-haze-pollution-act-companies-meeting-shanmugam-grace-fu-6498811"}],"summary":"新加坡拟在下一次国会会议修订《跨境烟霾污染法》，强制涉事企业聘用指定独立评估团队并给予资料、人员、场所、公司关系和供应链的完整访问；拒绝任命或合作将构成违法。","title":"新加坡拟把雾霾独立评估由行政要求升级为法定义务"},
+    {"confidence":"high","id":"haze-finance-and-listing-scrutiny-expands","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/transboundary-haze-pollution-act-companies-meeting-shanmugam-grace-fu-6498811"}],"summary":"SGX RegCo 对七家上市农业公司追加查询，MAS 提醒银行评估污染和毁林风险，并可附加融资条件、调整条款、限制敞口或退出客户关系。","title":"雾霾追责同步进入上市披露和银行融资环节"},
+    {"confidence":"high","id":"maju-gillman-housing-greenery-plan-revised","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/maju-forest-gillman-barracks-homes-plans-revised-hdb-6499241"}],"summary":"HDB 在收到约 9,500 份反馈并接触约 1,000 名利益相关方后，把 Maju Forest 与 Gillman Barracks 规划住房减少约 1,200 套至约 11,000 套，同时把两地保留绿地分别提高至约 10 与 12 公顷。","title":"HDB 以减少一千二百套住房换取更连续的森林和生态廊道"}
+  ],
+  "generated_at":"2026-10-29T10:56:57+08:00",
+  "intelligence_themes":[
+    {
+      "change_state":"turning",
+      "change_summary_zh":"过去 7 个有效日，新加坡工业 AI 主题从供应链扩散、新德合作和 1.5 亿新元材料平台进入执行；今天首次披露部分筛选可提速逾 10 倍，同时明确克级材料到吨级生产仍是独立瓶颈。主题由‘AI 能加速发现’转向‘商业价值取决于放大生产和客户验证’。",
+      "confidence":"high",
+      "counter_evidence_zh":["10 倍提速来自研究负责人对特定材料筛选流程的陈述，不是跨项目独立基准。","AI 可减少候选实验，但不能消除传热、传质、设备、法规和量产质量问题。","1.5 亿新元投入和实验速度不等于产品收入、客户采用或成功企业。"],
+      "event_ids":["marvel-ai-materials-commercialisation-gap"],
+      "evidence":[{"event_id":"marvel-ai-materials-commercialisation-gap","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/ai-lab-breakthroughs-new-businesses-innovation-singapore-6499511"}],
+      "id":"theme_2c8f14a6d9e730b5",
+      "impact_chain":[{"affected_actors_zh":["A*STAR 与材料科学团队","化工、医疗、能源和先进制造企业","试验放大与生产工程团队","深科技投资者和产业客户"],"cause_zh":"AI 与自动化实验室可高速生成、筛选和表征材料配方","confidence":"high","effect_zh":"发现周期缩短后，成本和失败风险转移到中试放大、批次稳定、法规验证和客户采购；没有这些环节，更多候选也不会自动成为业务","evidence_event_ids":["marvel-ai-materials-commercialisation-gap"],"mechanism_zh":"模型缩小化学组合搜索空间，机器人提高实验吞吐；但从克级到吨级会改变传热、传质和制造条件，必须以物理试验和客户规格重新验证"}],
+      "lanes":["AI/Technology","Business","Singapore/Asia"],
+      "problem_signals":[{"evidence_event_ids":["marvel-ai-materials-commercialisation-gap"],"problem_zh":"AI 实验室能快速产生候选材料，但研究团队与企业缺少把实验结果、放大参数、成本、质量和客户规格连接成可审查商业化证据的连续流程","type":"operational","who_has_it_zh":["材料研发团队","中试和制造工程团队","产业合作与技术转移团队","潜在企业客户"]}],
+      "reporting_date":"2026-10-29","score":98,
+      "score_rationale_zh":"资金、工作机制、具体提速和放大障碍形成清晰技术到商业链；单一报道和自报倍数尚不能证明跨项目成效。",
+      "thesis_zh":"MARVEL-AI 的重要变化不是材料发现更快，而是瓶颈被重新定位：当候选筛选可提速十倍，真正稀缺的能力变成把克级样品安全、稳定且经济地放大到吨级，并找到愿意采用的产业客户。",
+      "title_zh":"AI 材料研发把瓶颈从发现推向产业化，十倍实验速度仍跨不过吨级放大与客户采用",
+      "uncertainties_zh":["10 倍速度的基线、适用材料类别和误差率未披露。","MARVEL-AI 的知识产权、企业收费、数据权利和商业成果指标未知。","单一来源警告：证据来自 CNA 对 A*STAR 和行业人士的报道，尚无独立项目结果。"]
+    },
+    {
+      "change_state":"accelerating",
+      "change_summary_zh":"过去 7 个有效日，雾霾追责已从企业通知、专业审计和新印联合取证推进；今天拟议修法进一步把独立评估变为企业必须自费配合的法定义务，并让 SGX 披露和银行融资风险同步介入。加速来自法律、资本市场和信贷三条执行链同时落地，而不是报道数量。",
+      "confidence":"high",
+      "counter_evidence_zh":["十家企业仅承诺合作，尚未完成独立评估，也没有任何企业被认定违法。","拟议修法仍须经过国会，具体罪名、处罚、程序保障和境外适用范围未公布。","银行被提醒管理风险不等于已经限制授信；SGX 查询也不等于上市公司披露存在错误。"],
+      "event_ids":["singapore-haze-mandatory-independent-assessment-amendment","haze-finance-and-listing-scrutiny-expands"],
+      "evidence":[{"event_id":"singapore-haze-mandatory-independent-assessment-amendment","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/transboundary-haze-pollution-act-companies-meeting-shanmugam-grace-fu-6498811"},{"event_id":"haze-finance-and-listing-scrutiny-expands","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/transboundary-haze-pollution-act-companies-meeting-shanmugam-grace-fu-6498811"}],
+      "id":"theme_e52a7d19c4b830f6",
+      "impact_chain":[{"affected_actors_zh":["十家新加坡注册农业与林业集团","独立调查和法律评估团队","SGX 上市公司董事会","新加坡银行、投资者与 NEA"],"cause_zh":"现有跨境调查可被企业拒绝合作、复杂公司结构和第三方供应链阻断","confidence":"high","effect_zh":"企业可能被强制自费提供完整访问，评估结果进入 NEA 决策；同时董事会披露和银行融资条件将放大不合作或控制不足的资本成本","evidence_event_ids":["singapore-haze-mandatory-independent-assessment-amendment","haze-finance-and-listing-scrutiny-expands"],"mechanism_zh":"法律义务生成证据，SGX 查询迫使董事会解释控制与影响，MAS 指引把环境风险映射到授信条款、敞口限制或退出关系"}],
+      "lanes":["Singapore/Asia","Politics","Business"],
+      "problem_signals":[{"evidence_event_ids":["singapore-haze-mandatory-independent-assessment-amendment","haze-finance-and-listing-scrutiny-expands"],"problem_zh":"企业必须把遥感火点、土地控制、供应商关系、防火记录和融资暴露整合为可供调查者、董事会、交易所与银行共同审查的证据链","type":"regulatory","who_has_it_zh":["农业与林业集团","银行环境风险团队","上市公司董事会和审计团队","环境执法与独立评估机构"]}],
+      "reporting_date":"2026-10-29","score":100,
+      "score_rationale_zh":"拟议刑事义务、CEO 级承诺、SGX 追加查询和 MAS 信贷措施构成强执行升级；全部信息集中于一篇 CNA 报道且尚无裁决。",
+      "thesis_zh":"雾霾追责正在从要求企业交资料升级为强制企业自费接受穿透式评估，并把结果连接到上市披露和银行融资；公司结构与第三方供应链将不再天然成为调查屏障。",
+      "title_zh":"雾霾调查获得法律与金融双重杠杆，拒绝独立评估将拟定为违法并影响融资",
+      "uncertainties_zh":["修法文本、处罚尺度、申诉权和何种证据可触发强制评估未知。","独立评估团队的利益冲突、费用和境外取证权限尚未说明。","单一来源警告：法律、SGX 和 MAS 措施由 CNA 同一报道汇总，尚无国会法案或实际银行行动。"]
+    },
+    {
+      "change_state":"turning",
+      "change_summary_zh":"过去 30 个有效日的住房主题主要聚焦价格、供应和可负担性；今天 Maju Forest 与 Gillman Barracks 在约 9,500 份反馈和环境研究后实质减少 1,200 套规划住房，并分别增加约 2 与 4 公顷保留绿地。变化是咨询首次转化为可量化的住房—生态配置调整。",
+      "confidence":"high",
+      "counter_evidence_zh":["两地仍计划约 11,000 套住房，开发和部分森林清理并未取消。","住房数量基于概念规划，详细设计可能通过更高楼宇或其他调整改变密度与影响。","减少 1,200 套会把部分住房需求转移到其他地点或更晚时间，环境收益并非没有社会成本。"],
+      "event_ids":["maju-gillman-housing-greenery-plan-revised"],
+      "evidence":[{"event_id":"maju-gillman-housing-greenery-plan-revised","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/maju-forest-gillman-barracks-homes-plans-revised-hdb-6499241"}],
+      "id":"theme_b7e3d9a1c5f24068",
+      "impact_chain":[{"affected_actors_zh":["未来购房者和周边居民","HDB、NParks 与城市规划机构","自然与遗产团体","Maju Forest 和 Gillman Barracks 生态系统"],"cause_zh":"公众反馈与环境研究指出栖息地、生态连通性和遗产损失，而中央地区住房仍有需求","confidence":"high","effect_zh":"政府减少规划单位并扩大连续绿地，未来可能以更高建筑密度保留住房供给；部分需求则需由其他项目承担","evidence_event_ids":["maju-gillman-housing-greenery-plan-revised"],"mechanism_zh":"把反馈和生态研究转化为空间边界，较连续的森林提高栖息地长期可行性，但减少土地上的住房数量会增加其他地块、密度或时间安排压力"}],
+      "lanes":["Singapore/Asia","Politics","Business"],
+      "problem_signals":[{"evidence_event_ids":["maju-gillman-housing-greenery-plan-revised"],"problem_zh":"城市规划者缺少一个能让公众清楚比较住房数量、建筑高度、生态连通性、遗产和替代地块时间表的统一决策证据框架","type":"operational","who_has_it_zh":["HDB 和规划机构","居民与购房者","自然及遗产团体","建筑和基础设施团队"]}],
+      "reporting_date":"2026-10-29","score":95,
+      "score_rationale_zh":"住房减少、绿地增加、反馈数量和规划机制均可量化，显示真实方向调整；长期住房与生态结果仍待详细设计。",
+      "thesis_zh":"Maju Forest 与 Gillman Barracks 的修订说明公众咨询开始改变实体土地配置，而不只是改善沟通：新加坡用约 1,200 套住房的机会成本换取更连续的生态廊道。",
+      "title_zh":"住房与自然的权衡被量化，公众反馈让两地少建约一千二百套并保留更多连续绿地",
+      "uncertainties_zh":["最终楼高、户型、开工时间及对地区房价和等候时间的影响未知。","保留绿地在施工期间的边缘效应和长期生态质量尚未评估。","单一来源警告：事实来自 HDB 发布与 CNA 报道，尚缺最终环境管理计划和独立生态复核。"]
+    }
+  ],
+  "opportunity_hypothesis":null,
+  "speech_text":"今天有三个主题达到门槛。AI 材料研发的瓶颈从候选发现转移到吨级放大与客户采用；雾霾追责获得拟议法律、上市披露和银行融资三重杠杆；住房规划则首次把公众反馈转化为一千二百套住房与更多连续绿地的量化调整。今天不提出未经验证的商业机会。",
+  "status":"partial"
+}
