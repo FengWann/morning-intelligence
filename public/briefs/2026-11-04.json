@@ -1,0 +1,48 @@
+{
+  "brief_url":"https://fengwann.github.io/morning-intelligence/briefs/2026-11-04.md",
+  "date":"2026-11-04",
+  "events":[
+    {"confidence":"high","id":"sia-amadeus-46000-records-exposed","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/sia-singapore-airlines-amadeus-data-breach-booking-records-6517151"}],"summary":"SIA 确认约 46,000 条 Amadeus 订位记录被访问，包含姓名、订位编号、行程与舱等；其中约 620 条还可能包含联络、旅行证件及 KrisFlyer 资料。SIA 自有系统未被攻破，金融资料未暴露。","title":"SIA 量化 Amadeus 供应商泄露影响并更换临近出行旅客订位编号"},
+    {"confidence":"high","id":"singapore-healthcare-dns-outage-root-cause","sources":[{"name":"CNA","url":"https://www.channelnewsasia.com/singapore/public-healthcare-hospitals-disruption-parliament-moh-synapxe-6515151"}],"summary":"新加坡公共医疗 10 月 13 日的 9.5 小时中断源于服务商未完成共享 DNS 所需安全更新，约 4,000 个门诊预约改期；两座数据中心依赖同一 DNS 配置，因此切换不能恢复。","title":"公共医疗中断根因指向未完成更新与跨数据中心共同依赖"},
+    {"confidence":"high","id":"binance-multistage-endpoint-ai-tool-compromise","sources":[{"name":"Reuters via CNA","url":"https://www.channelnewsasia.com/business/binance-hackers-used-fake-job-interview-in-63-billion-attack-6517421"}],"summary":"Binance 初步报告称攻击从被篡改工具与虚假求职面试开始，攻击者先后控制多名 wallet developer 的电脑和凭据，并利用内部 AI 工具取得钱包系统权限；最后的未授权转账距首次盗取近四小时。","title":"Binance 披露多阶段终端、身份与内部 AI 工具攻击链"},
+    {"confidence":"high","id":"ai-debt-spillover-europe-bond-markets","sources":[{"name":"Reuters via CNA","url":"https://www.channelnewsasia.com/business/ai-related-debt-binge-may-pressure-european-bond-markets-6515556"}],"summary":"美国科技公司为 AI 基建扩大欧洲债券发行；美国今年科技相关发债已超过 US$250 billion、同比增 81%，市场预计 2027 年欧洲 reverse-Yankee 发行中 hyperscalers 将占主要部分。","title":"AI 基建融资开始把成本压力外溢到欧洲企业与政府债券市场"}
+  ],
+  "generated_at":"2026-11-04T08:02:29+08:00",
+  "intelligence_themes":[
+    {
+      "change_state":"accelerating","change_summary_zh":"两天前 Amadeus 主题已由 Malaysia Airlines、Cathay Pacific、Japan Airlines 和 Asiana 证明跨承运人扩散；今天 SIA 首次给出约 46,000 条记录与 620 条高敏感记录的量化影响。加速依据是新增受影响承运人、明确的地域与数据范围，不是转载数量。","confidence":"high",
+      "counter_evidence_zh":["SIA 自有 IT 系统未被入侵，金融资料未暴露，也没有订位被修改。","约 620 条记录的额外字段风险明显高于其余记录，不能把所有 46,000 条视为同等严重。","Amadeus 已实施围堵和额外安全措施。"],
+      "event_ids":["sia-amadeus-46000-records-exposed"],"evidence":[{"event_id":"sia-amadeus-46000-records-exposed","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/sia-singapore-airlines-amadeus-data-breach-booking-records-6517151"}],"id":"theme_8c1e5a9d3b724f60",
+      "impact_chain":[{"affected_actors_zh":["SIA 旅客","SIA 与其他航空公司","Amadeus","数据保护和客户服务团队"],"cause_zh":"共享订位平台的未授权访问扩展到 SIA 并暴露具体记录范围","confidence":"high","effect_zh":"航空公司即使自有系统安全，也必须主动换号、通知客户、监测定向诈骗并重新评估供应商共同失效风险","evidence_event_ids":["sia-amadeus-46000-records-exposed"],"mechanism_zh":"姓名、订位编号与行程资料能让攻击者制作高度可信的旅行钓鱼；更换临近出行旅客订位编号可降低直接滥用风险"}],
+      "lanes":["Singapore/Asia","Business","Technology"],"problem_signals":[{"evidence_event_ids":["sia-amadeus-46000-records-exposed"],"problem_zh":"航空公司需要按数据敏感度、出行时点与跨承运人暴露快速分层通知和重置，而不能只做统一式泄露公告","type":"operational","who_has_it_zh":["航空公司","旅行技术供应商","旅客","数据保护团队"]}],
+      "reporting_date":"2026-11-04","score":98,"score_rationale_zh":"新增 SIA、明确记录数和分层字段使供应商级扩散得到量化；完整根因和 Amadeus 全部客户范围仍未知。","thesis_zh":"SIA 的 46,000 条记录把 Amadeus 事件从跨航空公司名单推进到可量化的本地风险：真正需要优先处理的不是所有记录一刀切，而是临近出行、旅行证件与联络资料叠加后形成的高可信诈骗和账户滥用窗口。","title_zh":"Amadeus 泄露进入量化处置阶段，SIA 暴露显示风险必须分层","uncertainties_zh":["未说明数据是否被下载、出售或用于诈骗。","Amadeus 漏洞根因、完整时间线和全球受影响客户数仍未公开。","单一来源警告：记录范围来自 SIA 声明并由 CNA 报道，尚无独立取证报告。"]
+    },
+    {
+      "change_state":"turning","change_summary_zh":"过去 30 个有效日，该事件只确认三大医疗集群发生长时间中断且并非网络攻击；今天调查首次锁定服务商未完成已知 DNS 更新，并确认两座数据中心共享同一 DNS 配置。变化从恢复状态转向可执行的共同依赖治理。","confidence":"high",
+      "counter_evidence_zh":["没有患者安全事件被归因于中断，也没有资料被未授权访问、破坏或丢失。","人工流程和只读病历维持了关键照护。","集中式平台并非唯一原因；政府指出简单去中心化也未必能避免相同 DNS 依赖。"],
+      "event_ids":["singapore-healthcare-dns-outage-root-cause"],"evidence":[{"event_id":"singapore-healthcare-dns-outage-root-cause","source_name":"CNA","url":"https://www.channelnewsasia.com/singapore/public-healthcare-hospitals-disruption-parliament-moh-synapxe-6515151"}],"id":"theme_17f4a9c2e8d630b5",
+      "impact_chain":[{"affected_actors_zh":["公共医院与诊所","患者","Synapxe 与承包商","MOH"],"cause_zh":"承包商未完成已知的共享 DNS 安全更新，而两座备援数据中心依赖同一配置","confidence":"high","effect_zh":"名义上的双数据中心不能提供故障域隔离，医疗机构只能依靠人工降级，导致预约改期和服务延迟","evidence_event_ids":["singapore-healthcare-dns-outage-root-cause"],"mechanism_zh":"共同 DNS 失效使两套基础设施同时无法定位应用；切换数据中心无法绕开相同依赖，诊断与恢复因此延长"}],
+      "lanes":["Singapore/Asia","Politics","Technology"],"problem_signals":[{"evidence_event_ids":["singapore-healthcare-dns-outage-root-cause"],"problem_zh":"关键系统的备援设计和变更管理没有把共享 DNS、配置与外包执行纳入可验证的故障域测试","type":"operational","who_has_it_zh":["Synapxe","公共医疗机构","关键基础设施运营者","外包服务商"]}],
+      "reporting_date":"2026-11-04","score":97,"score_rationale_zh":"根因、影响人数、共同依赖和纠正方向均具体；改善措施的有效性尚待 MOH 验证。","thesis_zh":"这次医疗 IT 中断证明‘两座数据中心’不等于真正冗余：只要共享 DNS 和配置处于同一故障域，物理备援仍会一起失效；治理重点应从设施数量转向依赖图、变更验证与可演练的降级路径。","title_zh":"医疗 IT 中断暴露备援系统的共同依赖盲点","uncertainties_zh":["服务商身份、合同控制和更新未完成的具体流程未披露。","替代 DNS、监控与恢复安排何时完成未知。","单一来源警告：根因来自政府在国会披露，专家小组的独立复核尚未完成。"]
+    },
+    {
+      "change_state":"turning","change_summary_zh":"过去 7 个有效日，Binance 主题从 63 亿美元失窃转向资产补足和分阶段恢复提款；今天初步报告首次给出从 6 月恶意工具、9 月虚假面试到 10 月内部 AI 工具和钱包权限被利用的完整链条。方向从财务恢复转为根因和控制设计检验。","confidence":"high",
+      "counter_evidence_zh":["攻击路径由 Binance 初步报告提供，完整独立取证尚未发布。","FBI 指向朝鲜，朝鲜否认；主题不依赖该政治归因。","Binance 已冻结约 US$2.85 billion 资产并补偿用户，但这些措施不证明根因已消除。"],
+      "event_ids":["binance-multistage-endpoint-ai-tool-compromise"],"evidence":[{"event_id":"binance-multistage-endpoint-ai-tool-compromise","source_name":"Reuters via CNA","url":"https://www.channelnewsasia.com/business/binance-hackers-used-fake-job-interview-in-63-billion-attack-6517421"}],"id":"theme_3e7a1c9d5b824f60",
+      "impact_chain":[{"affected_actors_zh":["Binance 用户与开发团队","数字资产托管商","AI 工具供应链","安全与合规团队"],"cause_zh":"攻击者通过恶意开发工具和虚假求职流程持续获取多个工程师终端、凭据与角色信息","confidence":"high","effect_zh":"单点终端处置不足以切断已暴露的身份与权限关系，最终让内部 AI 工具成为跨系统操作的放大器并延长资金外流时间","evidence_event_ids":["binance-multistage-endpoint-ai-tool-compromise"],"mechanism_zh":"攻击者先建立组织与角色地图，再组合不同员工的终端和凭据，利用内部 AI 工具取得钱包系统控制并执行脚本"}],
+      "lanes":["Business","AI/Technology","Politics"],"problem_signals":[{"evidence_event_ids":["binance-multistage-endpoint-ai-tool-compromise"],"problem_zh":"高权限开发团队缺少把求职接触、开发工具来源、终端身份、内部 AI 操作和钱包签名权限串成持续风险判断的控制","type":"technology","who_has_it_zh":["数字资产平台","高权限软件团队","安全运营和身份治理团队"]}],
+      "reporting_date":"2026-11-04","score":97,"score_rationale_zh":"攻击链跨月、跨终端且具体解释 AI 工具与权限如何被组合；报告仍为公司初步版本。","thesis_zh":"Binance 事件的关键不是一次员工误点，而是攻击者用数月把软件供应链、求职社交工程、身份关系和内部 AI 工具串成一条持续控制链；恢复提款解决流动性，不能替代对跨终端权限路径的重构。","title_zh":"Binance 根因从单点入侵转为跨终端身份与 AI 工具攻击链","uncertainties_zh":["内部 AI 工具具体能力、授权边界和日志完整性未公开。","为何首次发现恶意工具后未能阻止后续身份利用仍不清楚。","单一来源警告：技术链条来自 Binance 初步报告，经 Reuters 转述，尚无完整独立取证。"]
+    },
+    {
+      "change_state":"accelerating","change_summary_zh":"昨天 Oracle 的 US$20 billion 融资已显示单家公司 AI 扩张占用资产负债表；今天市场数据把范围扩展至美国科技业今年超过 US$250 billion 发债、同比增 81%，并预计发行向欧元、英镑和瑞郎市场扩散。加速依据是独立公司与融资地域扩大，而非重复评论。","confidence":"high",
+      "counter_evidence_zh":["欧洲今年科技发债 US$39.3 billion，仅同比增约 5%，当前冲击仍小于美国。","强劲投资者需求迄今吸收了新增供给。","高评级科技债也为欧洲投资者增加可选择资产，并非只有负面效果。"],
+      "event_ids":["ai-debt-spillover-europe-bond-markets"],"evidence":[{"event_id":"ai-debt-spillover-europe-bond-markets","source_name":"Reuters via CNA","url":"https://www.channelnewsasia.com/business/ai-related-debt-binge-may-pressure-european-bond-markets-6515556"}],"id":"theme_49c1e8a6d3b720f5",
+      "impact_chain":[{"affected_actors_zh":["全球 hyperscalers","欧洲企业与政府借款人","债券投资者","公用事业与电信公司"],"cause_zh":"AI 基建资本需求推动美国科技公司跨币种大规模发债","confidence":"high","effect_zh":"科技公司融资可能挤占欧洲长期资本需求、扩大信用利差并抬高其他企业和政府的边际借款成本","evidence_event_ids":["ai-debt-spillover-europe-bond-markets"],"mechanism_zh":"高评级 hyperscaler 债券以更高收益竞争同一投资者资金；多笔巨额交易同时发行时，投资者要求其他借款人提供更高补偿"}],
+      "lanes":["Business","AI/Technology","Politics"],"problem_signals":[{"evidence_event_ids":["ai-debt-spillover-europe-bond-markets"],"problem_zh":"债券发行人与投资者需要评估 AI 巨额发债在币种、期限和同时发行情景下对信用利差及其他借款人的挤出效应","type":"market","who_has_it_zh":["债券投资者","欧洲企业财务团队","政府债务管理机构","承销银行"]}],
+      "reporting_date":"2026-11-04","score":95,"score_rationale_zh":"美国发债增速、欧洲管线与利差机制均有市场数据支持；欧洲实际供给尚未达到预测规模。","thesis_zh":"AI 基建融资已不只是科技股风险，而开始改变全球固定收益市场的资本分配：当 hyperscalers 把巨额债务带到欧洲，非科技企业和政府也可能通过更高融资成本间接承担 AI 扩张压力。","title_zh":"AI 债务扩张开始向欧洲融资成本外溢","uncertainties_zh":["预计中的 €40–60 billion 管线和 2027 年发行量可能随利率与 AI 需求变化。","利差扩大有多少来自 AI 债供给、财政风险或通胀预期无法完全分离。","来源包含多名市场参与者与 LSEG 数据，但未来发行预测仍是分析师估计。"]
+    }
+  ],
+  "opportunity_hypothesis":null,
+  "speech_text":"今天有四个主题达到门槛。SIA 的 46,000 条记录让 Amadeus 泄露进入量化处置；公共医疗中断暴露备援系统的共同依赖；Binance 根因转为跨终端身份与 AI 工具攻击链；AI 债务扩张开始向欧洲融资成本外溢。今天不提出未经验证的商业机会。",
+  "status":"partial"
+}
